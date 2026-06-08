@@ -1,6 +1,8 @@
 # SciGraphRAG
 
-TL;DR — SciGraphRAG est un pipeline reproductible qui transforme des ressources publiques (Gene Ontology, Reactome) en un graphe Neo4j exploitable pour des explorations interprétables de type GraphRAG. Résultat principal : un graphe intégré (453 nœuds, 823 relations) et un notebook de démonstration avec visualisations scientifiques.
+## Project Overview
+
+SciGraphRAG is a reproducible pipeline that integrates Gene Ontology and Reactome into a Neo4j knowledge graph for explainable biological knowledge exploration. The project demonstrates an end-to-end workflow covering RDF/OWL ingestion, graph modeling, Cypher querying, and scientific visualization.
 
 SciGraphRAG est une démonstration de graphe de connaissances biomédical centré sur l’interprétabilité. Le projet relie Gene Ontology et Reactome dans Neo4j afin de produire des requêtes explicables, des sous-graphes lisibles et des visualisations destinées à la consultation scientifique.
 
