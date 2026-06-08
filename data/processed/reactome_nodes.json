@@ -1,0 +1,1367 @@
+[
+  {
+    "type": "Pathway",
+    "id": "R-HSA-1852241",
+    "name": "Organelle biogenesis and maintenance",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-1592230",
+    "name": "Mitochondrial biogenesis",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-2151209",
+    "name": "Activation of PPARGC1A (PGC-1alpha) by phosphorylation",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-2151201",
+    "name": "Transcriptional activation of mitochondrial biogenesis",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-8949613",
+    "name": "Cristae formation",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-5617833",
+    "name": "Cilium Assembly",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-9975921",
+    "name": "Assembly of the 9+0 primary cilium",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-5620912",
+    "name": "Anchoring of the basal body to the plasma membrane",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-5620920",
+    "name": "Cargo trafficking to the periciliary membrane",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-5620916",
+    "name": "VxPx cargo-targeting to cilium",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-5620922",
+    "name": "BBSome-mediated cargo-targeting to cilium",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-5624138",
+    "name": "Trafficking of myristoylated proteins to the cilium",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-5624958",
+    "name": "ARL13B-mediated ciliary trafficking of INPP5E",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-5620924",
+    "name": "Intraflagellar transport",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-5653656",
+    "name": "Vesicle-mediated transport",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-199991",
+    "name": "Membrane Trafficking",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-199977",
+    "name": "ER to Golgi Anterograde Transport",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-5694530",
+    "name": "Cargo concentration in the ER",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-204005",
+    "name": "COPII-mediated vesicle transport",
+    "source": "Reactome"
+  },
+  {
+    "type": "Pathway",
+    "id": "R-HSA-6807878",
+    "name": "COPI-mediated anterograde transport",
+    "source": "Reactome"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q16656",
+    "name": "NRF1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q5VV67",
+    "name": "PRC1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P51610",
+    "name": "HCF1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P99999",
+    "name": "CYCS"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9NVH1",
+    "name": "DNAJC11"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P38646",
+    "name": "HSPA9"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9BUR5",
+    "name": "APOO"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q16891",
+    "name": "IMMT"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q5XKP0",
+    "name": "MIC13"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P17152",
+    "name": "TMEM11"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9BRQ6",
+    "name": "CHCHD6"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q6UXV4",
+    "name": "APOOL"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9NX63",
+    "name": "CHCHD3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q5TGZ0",
+    "name": "MINOS1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "A6NIH7",
+    "name": "UNC119B"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein278",
+    "name": "MyrG2-NPHP3, MyrG2-CYS1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q4AC94",
+    "name": "C2CD3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9UBK2",
+    "name": "PGC1A"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q00059",
+    "name": "TFAM"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9UHN1",
+    "name": "POLG2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q86YN6",
+    "name": "PPARGC1B"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q04837",
+    "name": "SSBP1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8IY31",
+    "name": "IFT20"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9NTG7",
+    "name": "SIRT3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein17",
+    "name": "GABPB1-2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein18",
+    "name": "GABPB1-4"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein19",
+    "name": "GABPB1-1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein20",
+    "name": "GABPB1-3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q06546",
+    "name": "GABPA"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein22",
+    "name": "p-PPARGC1A"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q6IQ55",
+    "name": "TTBK2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8TAM2",
+    "name": "TTC8"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9BXC9",
+    "name": "BBS2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8IWZ6",
+    "name": "BBS7"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "A8MTZ0",
+    "name": "BBIP1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96RK4",
+    "name": "BBS4"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q3SYG4",
+    "name": "BBS9"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8N3I7",
+    "name": "BBS5"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8NFJ9",
+    "name": "BBS1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P11474",
+    "name": "ESRRA"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8IW35",
+    "name": "CEP97"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O43303",
+    "name": "CCP110"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P06576",
+    "name": "ATP5B"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q99551",
+    "name": "MTERF"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q92973",
+    "name": "TNPO1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein54",
+    "name": "p-S133-CREB1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein53",
+    "name": "CREB"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O75695",
+    "name": "RP2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8WVM0",
+    "name": "TFB1M"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96LB3",
+    "name": "CMG1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9NWB7",
+    "name": "IFT57"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q13099",
+    "name": "IFT88"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein301",
+    "name": "TTC30"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9P2H3",
+    "name": "IFT80"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9NQC8",
+    "name": "IFT46"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9Y366",
+    "name": "IFT52"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9UG01",
+    "name": "IFT B"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9BW83",
+    "name": "RAYL"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8WYA0",
+    "name": "CDV1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "A0AVF1",
+    "name": "TTC26"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9Y547",
+    "name": "IFT25"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8TDR0",
+    "name": "IFT54"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9H7X7",
+    "name": "RABL5"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96AJ1",
+    "name": "CLUAP"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96NL6",
+    "name": "SAP1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9Y592",
+    "name": "CEP83"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8TES7",
+    "name": "ALB"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96ST8",
+    "name": "CEP89"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9UPV0",
+    "name": "CEP164"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O43924",
+    "name": "PDE6D"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9NRR6",
+    "name": "INPP5E"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q3SXY8",
+    "name": "ARL13B"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96QF0",
+    "name": "RAB3IP"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9H5Q4",
+    "name": "TFB2M"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein73",
+    "name": "RibC-GLUD"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein70",
+    "name": "GLUD"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein281",
+    "name": "myristoylated ciliary proteins"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q5SV97",
+    "name": "PERM1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein268",
+    "name": "BBSome ciliary cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96RR1",
+    "name": "TWNK"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q15643",
+    "name": "CEV14"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q7Z4L5",
+    "name": "THM1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96RY7",
+    "name": "IFT140"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9P2L0",
+    "name": "WDR35"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96FT9",
+    "name": "IFT43"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9HBG6",
+    "name": "SPG"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8NEZ3",
+    "name": "WDR19"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P13196",
+    "name": "ALAS1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O00411",
+    "name": "POLRMT"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96L34",
+    "name": "MARK4"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q2M2I8",
+    "name": "AAK1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q92538",
+    "name": "GBF1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O14653",
+    "name": "GS27"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein538",
+    "name": "STX5,17"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein582",
+    "name": "ER-to-ERGIC v-SNARES"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8WVM8",
+    "name": "SLY1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein593",
+    "name": "SNAPs"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O15155",
+    "name": "BET1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1353",
+    "name": "SYNJs,OCRL"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P08034",
+    "name": "GJB1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein836",
+    "name": "CYTH1,2,3,4"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1322",
+    "name": "VAMP2,3,8"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1319",
+    "name": "PICALMs"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O75396",
+    "name": "SEC22B"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein404",
+    "name": "SEC24A,SEC24B"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q15436",
+    "name": "S23A_HUMAN"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P16671",
+    "name": "GPIV"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8WUX9",
+    "name": "CHMP7"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1445",
+    "name": "CHMP2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1440",
+    "name": "CHMP4"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96FZ7",
+    "name": "CHMP6"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9Y3E7",
+    "name": "CHMP3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1522",
+    "name": "GDIs,CHMs"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O00443",
+    "name": "PIK3C2A"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P51809",
+    "name": "VAMP7"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P52594",
+    "name": "AGFG1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein436",
+    "name": "SEC24"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein529",
+    "name": "p-SEC24"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q5HYK7",
+    "name": "SH3D19"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q14671",
+    "name": "PUM1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q14677",
+    "name": "p-CLINT1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein960",
+    "name": "Vamp"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96AJ9",
+    "name": "VTI1A"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O60499",
+    "name": "STX10"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O14662",
+    "name": "STX16"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q15836",
+    "name": "VAMP3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P02760",
+    "name": "AMBP"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P43034",
+    "name": "Lis1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P53365",
+    "name": "POR1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein431",
+    "name": "GPI-CD59, GPI-FOLR1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9NZ43",
+    "name": "D12"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9P2W9",
+    "name": "STX18"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q12981",
+    "name": "BNIP1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9BZE9",
+    "name": "TUG"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P63027",
+    "name": "VAMP2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O00161",
+    "name": "SNAP23"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P14672",
+    "name": "GLUT4"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O00186",
+    "name": "STXBP3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P29033",
+    "name": "GJB2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1300",
+    "name": "STON2,1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P02768",
+    "name": "ALB"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P02790",
+    "name": "HPX"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein614",
+    "name": "Ankyrin"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q12893",
+    "name": "TMEM115"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q86TI0",
+    "name": "TBC1D1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q12846",
+    "name": "STX4"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9BV40",
+    "name": "VAMP8"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9HA65",
+    "name": "TBC1D17"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9Y3P9",
+    "name": "RABGAP1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1895",
+    "name": "SR-BI"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q7Z6M1",
+    "name": "RABEPK"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q5JRA6",
+    "name": "MIA3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96BZ9",
+    "name": "TBC1D20"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1304",
+    "name": "NEDD8-STONs"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O60664",
+    "name": "PP17"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9UIL1",
+    "name": "SCOC"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q14162",
+    "name": "SCARF1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q99962",
+    "name": "SH3GL2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P50570",
+    "name": "DNM2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q15843",
+    "name": "NEDD8(1-81)"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein451",
+    "name": "ER-to-ERGIC v-SNARES"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9HCU5",
+    "name": "PREB"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96PC5",
+    "name": "MIA2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1346",
+    "name": "WASL,CTTN"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8IYJ3",
+    "name": "JFC1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9BXI6",
+    "name": "TBC1D10A"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1274",
+    "name": "ARRB"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P98082",
+    "name": "DAB2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P98164",
+    "name": "LRP2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1084",
+    "name": "Lysosome Cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1068",
+    "name": "Vamp"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P49407",
+    "name": "ARRB1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1081",
+    "name": "Lysosome Cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1254",
+    "name": "EPS15,EPN1,EPN2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O43866",
+    "name": "CD5L"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1258",
+    "name": "UBQLN2,1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein966",
+    "name": "Vamp"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1063",
+    "name": "Lysosome Destined Cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1060",
+    "name": "Lysosome Destined Cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q13190",
+    "name": "STX5"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O95249",
+    "name": "GOSR1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9NYM9",
+    "name": "GS15"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O15498",
+    "name": "PalmC-YKT6"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein407",
+    "name": "GOSR2,STX5"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein410",
+    "name": "SEC24C,D"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein623",
+    "name": "ARFGAP1,2,3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein802",
+    "name": "other COG interacting snares"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9NY15",
+    "name": "STAB1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1181",
+    "name": "SRC-2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9UM54",
+    "name": "MYO6"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein933",
+    "name": "COPI-independent Golgi-to-ER cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9H3P7",
+    "name": "ACBD3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q07954",
+    "name": "LRP1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q86VB7",
+    "name": "CD163"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P53992",
+    "name": "SEC24C"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P17302",
+    "name": "GJA1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O95406",
+    "name": "CNIH1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein424",
+    "name": "TFGA, AREG precursors"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein771",
+    "name": "early endosome-to-TGN cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1900",
+    "name": "DAMP ligand of CD5L"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1206",
+    "name": "DAB2,LDLRAP1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9P0N9",
+    "name": "TBC1D7"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9P2M4",
+    "name": "TBC1D14"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O75385",
+    "name": "ULK1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1684",
+    "name": "RAB11"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein428",
+    "name": "CNIH2,3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P42261",
+    "name": "GRIA1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1160",
+    "name": "Dynamin"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9Y6B6",
+    "name": "SAR1B"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein821",
+    "name": "intra-Golgi cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8IZP1",
+    "name": "TBC1D3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q07157",
+    "name": "TJP1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "A1L4H1",
+    "name": "SSC5D"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9UL45",
+    "name": "PLDN"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96EV8",
+    "name": "DTNBP1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8NBS9",
+    "name": "TXNDC5"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P54920",
+    "name": "NAPA"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9NUP1",
+    "name": "CNO"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P78537",
+    "name": "BLOC1S1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q6QNY0",
+    "name": "BLOC1S3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q3MII6",
+    "name": "OATL1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1699",
+    "name": "ATG8 homologues"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein420",
+    "name": "glycosylated FV, FVIII precursor"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1627",
+    "name": "p-2S DENND1A, DENND1B"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1145",
+    "name": "Cx26/Cx32"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1144",
+    "name": "Cx26/Cx32"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1331",
+    "name": "SNX9,18"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1277",
+    "name": "NECAPs"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q96D71",
+    "name": "REPS1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q9BQI5",
+    "name": "SGIP1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1404",
+    "name": "GAK,DNAJC6"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1291",
+    "name": "ITSNs"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P42566",
+    "name": "EPS15"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein970",
+    "name": "Golgi-associated Vesicle Destined Cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein983",
+    "name": "Golgi-associated Vesicle Destined Cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1624",
+    "name": "DENND1A, DENND1B"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O75843",
+    "name": "AP1G2"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O43633",
+    "name": "CHMP2A"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O14964",
+    "name": "HGS"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8N2H4",
+    "name": "SYS1"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P05067",
+    "name": "APP"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "A2RUS2",
+    "name": "DENND3"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q8WWQ8",
+    "name": "HARE"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Q92738",
+    "name": "USP6NL"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O75379",
+    "name": "VAMP4"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "O43752",
+    "name": "STX6"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1026",
+    "name": "Golgi-associated Vesicle Cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "Protein1022",
+    "name": "Golgi-associated Vesicle Cargo"
+  },
+  {
+    "type": "Protein",
+    "uniprot": "P27958",
+    "name": "POLG"
+  }
+]

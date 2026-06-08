@@ -1,0 +1,3587 @@
+[
+  {
+    "source": "A0AVF1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "A0AVF1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "A0AVF1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "A0AVF1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "A1L4H1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "A2RUS2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "A2RUS2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "A6NIH7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "A6NIH7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "A6NIH7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "A6NIH7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5624138"
+  },
+  {
+    "source": "A6NIH7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "A8MTZ0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "A8MTZ0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "A8MTZ0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "A8MTZ0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620922"
+  },
+  {
+    "source": "A8MTZ0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "O00161",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O00161",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O00186",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O00186",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O00411",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "O00411",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "O00411",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "O00443",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O00443",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O14653",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "O14653",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O14653",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "O14653",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O14653",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "O14662",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O14662",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O14964",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O14964",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O15155",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "O15155",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O15155",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "O15155",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O15155",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "O15498",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "O15498",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O15498",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O15498",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "O43303",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "O43303",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "O43303",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "O43303",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "O43633",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O43633",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O43752",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O43752",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O43866",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O43924",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "O43924",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "O43924",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "O43924",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5624958"
+  },
+  {
+    "source": "O43924",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "O60499",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O60499",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O60664",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O60664",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O75379",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O75379",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O75385",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O75385",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O75396",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "O75396",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O75396",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O75396",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "O75695",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "O75695",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "O75695",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "O75695",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5624138"
+  },
+  {
+    "source": "O75695",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "O75843",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O75843",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O95249",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "O95249",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O95249",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O95249",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "O95406",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "O95406",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "O95406",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "O95406",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "P02760",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P02768",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P02790",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P05067",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P05067",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P06576",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "P06576",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "P06576",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "P08034",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P08034",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P11474",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "P11474",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "P11474",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "P13196",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "P13196",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "P13196",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "P14672",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P14672",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P16671",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P17152",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "P17152",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "P17152",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-8949613"
+  },
+  {
+    "source": "P17302",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P17302",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P27958",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P27958",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P29033",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P29033",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P38646",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "P38646",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "P38646",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-8949613"
+  },
+  {
+    "source": "P42261",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "P42261",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P42261",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P42261",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "P42566",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P42566",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P43034",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P43034",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P49407",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P49407",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P50570",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P50570",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P51610",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "P51610",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "P51610",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "P51809",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P51809",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P52594",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P52594",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P53365",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P53365",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P53992",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "P53992",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P53992",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P53992",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "P54920",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P54920",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P63027",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P63027",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P78537",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P78537",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P98082",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P98082",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P98164",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "P98164",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "P99999",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "P99999",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "P99999",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Protein1022",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1022",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1026",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1026",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1060",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1060",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1063",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1063",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1068",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1068",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1081",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1081",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1084",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1084",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1144",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1144",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1145",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1145",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1160",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1160",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1181",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1181",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1206",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1206",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1254",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1254",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1258",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1258",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1274",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1274",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1277",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1277",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1291",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1291",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1300",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1300",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1304",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1304",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1319",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1319",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1322",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1322",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1331",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1331",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1346",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1346",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1353",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1353",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1404",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1404",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1440",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1440",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1445",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1445",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1522",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1522",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1624",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1624",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1627",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1627",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1684",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1684",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein1699",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein1699",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein17",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Protein17",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein17",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Protein18",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Protein18",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein18",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Protein1895",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein19",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Protein19",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein19",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Protein1900",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein20",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Protein20",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein20",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Protein22",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Protein22",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein22",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Protein268",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein268",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Protein268",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Protein268",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620922"
+  },
+  {
+    "source": "Protein268",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Protein278",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein278",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Protein278",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Protein278",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5624138"
+  },
+  {
+    "source": "Protein278",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Protein281",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein281",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Protein281",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Protein281",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5624138"
+  },
+  {
+    "source": "Protein281",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Protein301",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein301",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Protein301",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Protein301",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Protein404",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein404",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein404",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein404",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Protein407",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein407",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein407",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein407",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Protein410",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein410",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein410",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein410",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Protein420",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein420",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein420",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein420",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Protein424",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein424",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein424",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein424",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Protein428",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein428",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein428",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein428",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Protein431",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein431",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein431",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein431",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Protein436",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein436",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein436",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "Protein436",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein451",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein451",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein451",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "Protein451",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein529",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein529",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein529",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "Protein529",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein53",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Protein53",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein53",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Protein538",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein538",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein538",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "Protein538",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein54",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Protein54",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein54",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Protein582",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein582",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein582",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "Protein582",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein593",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein593",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein593",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "Protein593",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein593",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "Protein614",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein614",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein614",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein614",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "Protein623",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Protein623",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein623",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein623",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "Protein70",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Protein70",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein70",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Protein73",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Protein73",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Protein73",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Protein771",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein771",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein802",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein802",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein821",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein821",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein836",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein836",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein933",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein933",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein960",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein960",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein966",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein966",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein970",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein970",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Protein983",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Protein983",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q00059",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q00059",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q00059",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q04837",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q04837",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q04837",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q06546",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q06546",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q06546",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q07157",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q07157",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q07954",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q12846",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q12846",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q12893",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q12893",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q12893",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q12893",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "Q12981",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q12981",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q13099",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q13099",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q13099",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q13099",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q13190",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q13190",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q13190",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q13190",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "Q14162",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q14671",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q14671",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q14677",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q14677",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q15436",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q15436",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q15436",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "Q15436",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q15436",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Q15643",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q15643",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q15643",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q15643",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q15836",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q15836",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q15843",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q15843",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q16656",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q16656",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q16656",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q16891",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q16891",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q16891",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-8949613"
+  },
+  {
+    "source": "Q2M2I8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q2M2I8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q3MII6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q3MII6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q3SXY8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q3SXY8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q3SXY8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Q3SXY8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5624958"
+  },
+  {
+    "source": "Q3SXY8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q3SYG4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q3SYG4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q3SYG4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Q3SYG4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620922"
+  },
+  {
+    "source": "Q3SYG4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q4AC94",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q4AC94",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q4AC94",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "Q4AC94",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q5HYK7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q5HYK7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q5JRA6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q5JRA6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q5JRA6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q5JRA6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Q5SV97",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q5SV97",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q5SV97",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q5TGZ0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q5TGZ0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q5TGZ0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-8949613"
+  },
+  {
+    "source": "Q5VV67",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q5VV67",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q5VV67",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q5XKP0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q5XKP0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q5XKP0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-8949613"
+  },
+  {
+    "source": "Q6IQ55",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q6IQ55",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q6IQ55",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "Q6IQ55",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q6QNY0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q6QNY0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q6UXV4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q6UXV4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q6UXV4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-8949613"
+  },
+  {
+    "source": "Q7Z4L5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q7Z4L5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q7Z4L5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q7Z4L5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q7Z6M1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q7Z6M1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q86TI0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q86TI0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q86VB7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q86YN6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q86YN6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q86YN6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q8IW35",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8IW35",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q8IW35",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "Q8IW35",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q8IWZ6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8IWZ6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q8IWZ6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Q8IWZ6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620922"
+  },
+  {
+    "source": "Q8IWZ6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q8IY31",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8IY31",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q8IY31",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q8IY31",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q8IYJ3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q8IYJ3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q8IZP1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q8IZP1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q8N2H4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q8N2H4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q8N3I7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8N3I7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q8N3I7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Q8N3I7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620922"
+  },
+  {
+    "source": "Q8N3I7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q8NBS9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q8NBS9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q8NEZ3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8NEZ3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q8NEZ3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q8NEZ3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q8NFJ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8NFJ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q8NFJ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Q8NFJ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620922"
+  },
+  {
+    "source": "Q8NFJ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q8TAM2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8TAM2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q8TAM2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Q8TAM2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620922"
+  },
+  {
+    "source": "Q8TAM2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q8TDR0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8TDR0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q8TDR0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q8TDR0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q8TES7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8TES7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q8TES7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "Q8TES7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q8WUX9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q8WUX9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q8WVM0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q8WVM0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8WVM0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q8WVM8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q8WVM8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q8WVM8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "Q8WVM8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q8WWQ8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q8WYA0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q8WYA0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q8WYA0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q8WYA0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q92538",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q92538",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q92538",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q92538",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "Q92738",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q92738",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q92973",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q92973",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q92973",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q92973",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q96AJ1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q96AJ1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q96AJ1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q96AJ1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q96AJ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q96AJ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q96BZ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q96BZ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q96BZ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "Q96BZ9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q96D71",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q96D71",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q96EV8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q96EV8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q96FT9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q96FT9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q96FT9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q96FT9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q96FZ7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q96FZ7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q96L34",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q96L34",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q96L34",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "Q96L34",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q96LB3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q96LB3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q96LB3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q96LB3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q96NL6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q96NL6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q96NL6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "Q96NL6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q96PC5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q96PC5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q96PC5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q96PC5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Q96QF0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q96QF0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q96QF0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "Q96QF0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Q96QF0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620922"
+  },
+  {
+    "source": "Q96QF0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q96RK4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q96RK4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q96RK4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Q96RK4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620922"
+  },
+  {
+    "source": "Q96RK4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q96RR1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q96RR1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q96RR1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q96RY7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q96RY7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q96RY7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q96RY7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q96ST8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q96ST8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q96ST8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "Q96ST8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q99551",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q99551",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q99551",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q99962",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q99962",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9BQI5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9BQI5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9BRQ6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q9BRQ6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9BRQ6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-8949613"
+  },
+  {
+    "source": "Q9BUR5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q9BUR5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9BUR5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-8949613"
+  },
+  {
+    "source": "Q9BV40",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9BV40",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9BW83",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9BW83",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9BW83",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q9BW83",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9BXC9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9BXC9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9BXC9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Q9BXC9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620922"
+  },
+  {
+    "source": "Q9BXC9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9BXI6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9BXI6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9BZE9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9BZE9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9H3P7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9H3P7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9H5Q4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q9H5Q4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9H5Q4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q9H7X7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9H7X7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9H7X7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q9H7X7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9HA65",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9HA65",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9HBG6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9HBG6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9HBG6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q9HBG6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9HCU5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q9HCU5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9HCU5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9HCU5",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5694530"
+  },
+  {
+    "source": "Q9NQC8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9NQC8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9NQC8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q9NQC8",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9NRR6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9NRR6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9NRR6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620920"
+  },
+  {
+    "source": "Q9NRR6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5624958"
+  },
+  {
+    "source": "Q9NRR6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9NTG7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q9NTG7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9NTG7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q9NUP1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9NUP1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9NVH1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q9NVH1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9NVH1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-8949613"
+  },
+  {
+    "source": "Q9NWB7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9NWB7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9NWB7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q9NWB7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9NX63",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q9NX63",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9NX63",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-8949613"
+  },
+  {
+    "source": "Q9NY15",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9NYM9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q9NYM9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9NYM9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9NYM9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-6807878"
+  },
+  {
+    "source": "Q9NZ43",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9NZ43",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9P0N9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9P0N9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9P2H3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9P2H3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9P2H3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q9P2H3",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9P2L0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9P2L0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9P2L0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q9P2L0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9P2M4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9P2M4",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9P2W9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9P2W9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9UBK2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q9UBK2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9UBK2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q9UBK2",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151209"
+  },
+  {
+    "source": "Q9UG01",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9UG01",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9UG01",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q9UG01",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9UHN1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1592230"
+  },
+  {
+    "source": "Q9UHN1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9UHN1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-2151201"
+  },
+  {
+    "source": "Q9UIL1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9UIL1",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9UL45",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9UL45",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9UM54",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9UM54",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9UPV0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9UPV0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9UPV0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "Q9UPV0",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9Y366",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9Y366",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9Y366",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q9Y366",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9Y3E7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9Y3E7",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9Y3P9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9Y3P9",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  },
+  {
+    "source": "Q9Y547",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9Y547",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9Y547",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620924"
+  },
+  {
+    "source": "Q9Y547",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9Y592",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-1852241"
+  },
+  {
+    "source": "Q9Y592",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5617833"
+  },
+  {
+    "source": "Q9Y592",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5620912"
+  },
+  {
+    "source": "Q9Y592",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-9975921"
+  },
+  {
+    "source": "Q9Y6B6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199977"
+  },
+  {
+    "source": "Q9Y6B6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-199991"
+  },
+  {
+    "source": "Q9Y6B6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-204005"
+  },
+  {
+    "source": "Q9Y6B6",
+    "relation": "PARTICIPATES_IN",
+    "target": "R-HSA-5653656"
+  }
+]

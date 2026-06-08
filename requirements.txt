@@ -1,0 +1,10 @@
+rdflib==7.0.0
+neo4j==5.19.0
+py2neo==2024.1.0
+networkx==3.3
+pyvis==0.3.2
+pandas==2.2.2
+python-dotenv==1.0.1
+jupyter==1.0.0
+notebook==7.2.0
+requests==2.31.0
