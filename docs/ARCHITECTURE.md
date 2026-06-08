@@ -2,14 +2,24 @@
 
 ```mermaid
 flowchart TD
-    GO[Gene Ontology (OWL/RDF)] --> RDF[rdflib]
-    RDF --> SPARQL[SPARQL]
-    SPARQL --> NEO4J[Neo4j]
+    GO[Gene Ontology]
+    RDF[RDF OWL Parsing]
+    SPARQL[SPARQL Queries]
+    NEO4J[Neo4j Knowledge Graph]
 
-    REACTOME[Reactome (BioPAX / OWL/RDF)] --> NEO4J
+    REACTOME[Reactome]
 
-    NEO4J --> CYPHER[Cypher]
-    CYPHER --> VIS[Visualisation]
+    CYPHER[Cypher Queries]
+    VIS[Visualization]
+
+    GO --> RDF
+    RDF --> SPARQL
+    SPARQL --> NEO4J
+
+    REACTOME --> NEO4J
+
+    NEO4J --> CYPHER
+    CYPHER --> VIS
 ```
 
 ## Lecture du schéma
