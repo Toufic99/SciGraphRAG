@@ -4,6 +4,8 @@
 
 SciGraphRAG est une démonstration de graphe de connaissances biomédical centré sur l’interprétabilité. Le projet relie Gene Ontology et Reactome dans Neo4j afin de produire des requêtes explicables, des sous-graphes lisibles et des visualisations destinées à la consultation scientifique.
 
+Cette version se concentre sur la construction du graphe de connaissances et le raisonnement explicable. L'intégration complète d'un pipeline GraphRAG combinant retrieval de sous-graphe et LLM pour la génération de réponses est envisagée comme évolution future.
+
 ## Présentation du projet
 
 Le projet construit un pipeline reproductible pour convertir des données OWL/BioPAX en un graphe Neo4j exploitable pour des usages de type GraphRAG. L’objectif n’est pas de fournir un produit applicatif, mais de montrer une chaîne complète d’ingestion, de modélisation, de requêtage et de visualisation adaptée à la recherche en bioinformatique.
@@ -22,7 +24,7 @@ En résumé:
 - Reactome est intégré au même graphe comme couche de voies biologiques (pathways) et de protéines.
 - Les requêtes `Cypher` alimentent le notebook de démonstration et les visualisations.
 
-## Quickstart (minimal)
+## Démarrage rapide
 
 1. Installer les dépendances:
 
@@ -142,25 +144,24 @@ LIMIT 120
 
 Les visualisations ont été générées dans [examples/sample_outputs](examples/sample_outputs).
 
-Figure: Q1 — GO apoptosis neighborhood
+Figure : Q1 — Voisinage GO autour d'apoptosis
 ![Q1 - GO apoptosis](examples/sample_outputs/q1_go_apoptosis.png)
-Caption: Neighborhood of GO terms containing "apopt" (exemple de sous-graphe GO).
+Légende : Voisinage de termes GO contenant « apopt » (exemple de sous-graphe GO).
 
-Figure: Q3 — Proteins participating in a pathway
+Figure : Q3 — Protéines participant à une voie biologique
 ![Q3 - Protein participates in pathway](examples/sample_outputs/q3_protein_participates.png)
-Caption: Exemple de protéines mappées à une voie biologique (pathway).
+Légende : Exemple de protéines mappées à une voie biologique.
 
-Figure: Q5 — IS_A relations
+Figure : Q5 — Relations IS_A
 ![Q5 - IS_A](examples/sample_outputs/q5_is_a.png)
-Caption: Exemples de relations hiérarchiques `IS_A`.
+Légende : Exemples de relations hiérarchiques `IS_A`.
 
-**How to reproduce the reported statistics**: run
-
+**Reproduire les statistiques** :
 ```bash
 python scripts/report_full_counts.py
 ```
 
-This script executes the Cypher count queries used to populate la section « Statistiques du graphe ».
+Ce script exécute les requêtes Cypher de comptage utilisées pour alimenter la section « Statistiques du graphe ».
 
 ## Résultats obtenus
 
