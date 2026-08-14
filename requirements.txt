@@ -10,3 +10,8 @@ notebook==7.2.0
 requests==2.31.0
 sentence-transformers>=3.0
 pytest>=8.0
+
+# Optionnel : generation de reponse redigee.
+# Necessite aussi ANTHROPIC_API_KEY dans .env.
+# Sans ce paquet, le pipeline fonctionne et affiche le contexte sans redaction.
+# anthropic>=0.40
