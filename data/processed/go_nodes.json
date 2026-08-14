@@ -5,11 +5,6 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0039526",
-    "label": "obsolete perturbation by virus of host apoptosis",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0002161",
     "label": "aminoacyl-tRNA deacylase activity",
     "namespace": "molecular_function"
@@ -30,11 +25,6 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0051103",
-    "label": "obsolete DNA ligation involved in DNA repair",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0006282",
     "label": "regulation of DNA repair",
     "namespace": "biological_process"
@@ -47,11 +37,6 @@
   {
     "id": "http://purl.obolibrary.org/obo/GO_0090735",
     "label": "DNA repair complex assembly",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052414",
-    "label": "obsolete metabolism by host of symbiont glucan",
     "namespace": "biological_process"
   },
   {
@@ -72,16 +57,6 @@
   {
     "id": "http://purl.obolibrary.org/obo/GO_0106044",
     "label": "guanine deglycation",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0070413",
-    "label": "obsolete trehalose metabolism in response to stress",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0010779",
-    "label": "obsolete meiotic DNA repair synthesis involved in meiotic gene conversion",
     "namespace": "biological_process"
   },
   {
@@ -110,18 +85,8 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_2000499",
-    "label": "obsolete negative regulation of induction of apoptosis in response to chemical stimulus",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0000725",
     "label": "recombinational repair",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052420",
-    "label": "obsolete metabolism by host of symbiont xylan",
     "namespace": "biological_process"
   },
   {
@@ -132,21 +97,6 @@
   {
     "id": "http://purl.obolibrary.org/obo/GO_1904161",
     "label": "DNA synthesis involved in UV-damage excision repair",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052214",
-    "label": "obsolete metabolism of substance in other organism involved in symbiotic interaction",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052412",
-    "label": "obsolete metabolism by host of symbiont cell wall pectin",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0030972",
-    "label": "obsolete cleavage of cytosolic proteins involved in execution phase of apoptosis",
     "namespace": "biological_process"
   },
   {
@@ -190,23 +140,8 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0003686",
-    "label": "obsolete DNA repair enzyme",
-    "namespace": "molecular_function"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0009987",
     "label": "cellular process",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_2001270",
-    "label": "obsolete regulation of cysteine-type endopeptidase activity involved in execution phase of apoptosis",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0019987",
-    "label": "obsolete negative regulation of anti-apoptosis",
     "namespace": "biological_process"
   },
   {
@@ -225,59 +160,14 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0010682",
-    "label": "obsolete cinnamic acid biosynthetic process involved in flavonoid metabolism",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0010681",
-    "label": "obsolete cinnamic acid biosynthetic process involved in stilbene metabolism",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_2000498",
-    "label": "obsolete regulation of induction of apoptosis in response to chemical stimulus",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052178",
-    "label": "obsolete metabolism by symbiont of host cell wall chitin",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0050794",
     "label": "regulation of cellular process",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0010679",
-    "label": "obsolete cinnamic acid biosynthetic process involved in salicylic acid metabolism",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0070414",
-    "label": "obsolete trehalose metabolism in response to heat stress",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_1990985",
-    "label": "obsolete apoptosis in response to oxidative stress",
     "namespace": "biological_process"
   },
   {
     "id": "http://purl.obolibrary.org/obo/GO_0000730",
     "label": "DNA recombinase assembly",
     "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052408",
-    "label": "obsolete metabolism by host of symbiont cell wall cellulose",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0003685",
-    "label": "obsolete DNA repair protein",
-    "namespace": "molecular_function"
   },
   {
     "id": "http://purl.obolibrary.org/obo/GO_1902494",
@@ -300,21 +190,6 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0052418",
-    "label": "obsolete metabolism by organism of protein in other organism involved in symbiotic interaction",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052179",
-    "label": "obsolete metabolism by symbiont of host cell wall pectin",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052411",
-    "label": "obsolete metabolism by organism of cell wall chitin in other organism involved in symbiotic interaction",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0045004",
     "label": "DNA replication proofreading",
     "namespace": "biological_process"
@@ -325,11 +200,6 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0070415",
-    "label": "obsolete trehalose metabolism in response to cold stress",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0033668",
     "label": "symbiont-mediated suppression of host apoptosis",
     "namespace": "biological_process"
@@ -337,11 +207,6 @@
   {
     "id": "http://purl.obolibrary.org/obo/GO_1990396",
     "label": "single-strand break repair via homologous recombination",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0010680",
-    "label": "obsolete cinnamic acid biosynthetic process involved in coumarin metabolism",
     "namespace": "biological_process"
   },
   {
@@ -370,28 +235,13 @@
     "namespace": "cellular_component"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0045767",
-    "label": "obsolete regulation of anti-apoptosis",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_1905781",
     "label": "negative regulation of phosphatidylserine exposure on apoptotic cell surface",
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0052410",
-    "label": "obsolete metabolism by host of symbiont cell wall chitin",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0006338",
     "label": "chromatin remodeling",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0003377",
-    "label": "obsolete regulation of apoptosis by sphingosine-1-phosphate signaling pathway",
     "namespace": "biological_process"
   },
   {
@@ -405,11 +255,6 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0052432",
-    "label": "obsolete modulation by organism of symbiont apoptosis",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0006284",
     "label": "base-excision repair",
     "namespace": "biological_process"
@@ -417,11 +262,6 @@
   {
     "id": "http://purl.obolibrary.org/obo/GO_0052042",
     "label": "symbiont-mediated activation of host programmed cell death",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052406",
-    "label": "obsolete metabolism by host of symbiont carbohydrate",
     "namespace": "biological_process"
   },
   {
@@ -435,58 +275,13 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0052407",
-    "label": "obsolete metabolism by organism of carbohydrate in other organism involved in symbiotic interaction",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0052151",
     "label": "symbiont-mediated activation of host apoptosis",
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0070416",
-    "label": "obsolete trehalose metabolism in response to water deprivation",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0016329",
-    "label": "obsolete apoptosis regulator activity",
-    "namespace": "molecular_function"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052175",
-    "label": "obsolete metabolism by symbiont of host carbohydrate",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0045021",
-    "label": "obsolete error-free DNA repair",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0006301",
     "label": "DNA damage tolerance",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052416",
-    "label": "obsolete metabolism by host of symbiont macromolecule",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_2001271",
-    "label": "obsolete negative regulation of cysteine-type endopeptidase activity involved in execution phase of apoptosis",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0006922",
-    "label": "obsolete cleavage of lamin involved in execution phase of apoptosis",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052417",
-    "label": "obsolete metabolism by host of symbiont protein",
     "namespace": "biological_process"
   },
   {
@@ -497,11 +292,6 @@
   {
     "id": "http://purl.obolibrary.org/obo/GO_0042981",
     "label": "regulation of apoptotic process",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0097297",
-    "label": "obsolete activation of cysteine-type endopeptidase activity involved in execution phase of apoptosis",
     "namespace": "biological_process"
   },
   {
@@ -520,11 +310,6 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0052174",
-    "label": "obsolete metabolism by symbiont of host macromolecule",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_1903517",
     "label": "negative regulation of single strand break repair",
     "namespace": "biological_process"
@@ -540,18 +325,8 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0097200",
-    "label": "obsolete cysteine-type endopeptidase activity involved in execution phase of apoptosis",
-    "namespace": "molecular_function"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0006450",
     "label": "regulation of translational fidelity",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052421",
-    "label": "obsolete metabolism by organism of xylan in other organism involved in symbiotic interaction",
     "namespace": "biological_process"
   },
   {
@@ -565,33 +340,8 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_2001272",
-    "label": "obsolete positive regulation of cysteine-type endopeptidase activity involved in execution phase of apoptosis",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0008189",
-    "label": "obsolete apoptosis inhibitor activity",
-    "namespace": "molecular_function"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052176",
-    "label": "obsolete metabolism by symbiont of host glucan",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_1900404",
-    "label": "obsolete positive regulation of DNA repair by positive regulation of transcription from RNA polymerase II promoter",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0045738",
     "label": "negative regulation of DNA repair",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052387",
-    "label": "obsolete induction by organism of symbiont apoptosis",
     "namespace": "biological_process"
   },
   {
@@ -602,31 +352,6 @@
   {
     "id": "http://purl.obolibrary.org/obo/GO_1905051",
     "label": "regulation of base-excision repair",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0045768",
-    "label": "obsolete positive regulation of anti-apoptosis",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052228",
-    "label": "obsolete metabolism by symbiont of host protein",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052172",
-    "label": "obsolete metabolism by symbiont of host cell wall cellulose",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052177",
-    "label": "obsolete metabolism by symbiont of host xylan",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0006918",
-    "label": "obsolete induction of apoptosis by p53",
     "namespace": "biological_process"
   },
   {
@@ -645,53 +370,13 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0006920",
-    "label": "obsolete commitment to apoptosis",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052419",
-    "label": "obsolete metabolism by host of substance in symbiont",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0016506",
-    "label": "obsolete apoptosis activator activity",
-    "namespace": "molecular_function"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052002",
-    "label": "obsolete metabolism by symbiont of substance in host",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0098504",
-    "label": "obsolete DNA 3' dephosphorylation involved in DNA repair",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_2000500",
-    "label": "obsolete positive regulation of induction of apoptosis in response to chemical stimulus",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0032423",
     "label": "regulation of mismatch repair",
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0031558",
-    "label": "obsolete induction of apoptosis in response to chemical stimulus",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0052150",
     "label": "symbiont-mediated perturbation of host apoptosis",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_1902113",
-    "label": "obsolete nucleotide phosphorylation involved in DNA repair",
     "namespace": "biological_process"
   },
   {
@@ -725,21 +410,6 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0006923",
-    "label": "obsolete cleavage of cytoskeletal proteins involved in execution phase of apoptosis",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0100026",
-    "label": "obsolete positive regulation of DNA repair by transcription from RNA polymerase II promoter",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052500",
-    "label": "obsolete positive regulation by organism of symbiont apoptosis",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0043504",
     "label": "mitochondrial DNA repair",
     "namespace": "biological_process"
@@ -770,33 +440,13 @@
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0045020",
-    "label": "obsolete error-prone DNA repair",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0046787",
     "label": "viral DNA repair",
     "namespace": "biological_process"
   },
   {
-    "id": "http://purl.obolibrary.org/obo/GO_0052229",
-    "label": "obsolete metabolism of macromolecule in other organism involved in symbiotic interaction",
-    "namespace": "biological_process"
-  },
-  {
     "id": "http://purl.obolibrary.org/obo/GO_0051053",
     "label": "negative regulation of DNA metabolic process",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052415",
-    "label": "obsolete metabolism by organism of glucan in other organism involved in symbiotic interaction",
-    "namespace": "biological_process"
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/GO_0052409",
-    "label": "obsolete metabolism by organism of cell wall cellulose in other organism involved in symbiotic interaction",
     "namespace": "biological_process"
   },
   {

@@ -66,7 +66,20 @@ def extract_subset(g):
         'PREFIX owl: <http://www.w3.org/2002/07/owl#>',
         'PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>'
     ])
-    q = prefixes + '\nSELECT ?term ?label ?ns WHERE { ?term a owl:Class . ?term rdfs:label ?label . OPTIONAL { ?term oboInOwl:hasOBONamespace ?ns } }'
+    # Deprecated GO terms are excluded at the source. They are isolated in the
+    # hierarchy (no IS_A / PART_OF edges), so they add no explainability, and
+    # PubMed returns nothing for labels like "obsolete DNA ligation involved in
+    # DNA repair". Left in, they accounted for 43% of the imported concepts.
+    # Belt and braces: owl:deprecated is the semantic marker, the "obsolete "
+    # label prefix is the GO convention -- some terms carry only one of the two.
+    q = prefixes + '''
+    SELECT ?term ?label ?ns WHERE {
+      ?term a owl:Class .
+      ?term rdfs:label ?label .
+      OPTIONAL { ?term oboInOwl:hasOBONamespace ?ns }
+      FILTER NOT EXISTS { ?term owl:deprecated true }
+      FILTER (!STRSTARTS(LCASE(STR(?label)), "obsolete "))
+    }'''
     res = g.query(q)
 
     nodes = {}
@@ -76,7 +89,7 @@ def extract_subset(g):
         ns = str(row.ns) if hasattr(row, 'ns') and row.ns else ''
         nodes[term] = {'id': term, 'label': label, 'namespace': ns}
 
-    logging.info('Total classes discovered: %d', len(nodes))
+    logging.info('Total classes discovered (deprecated excluded): %d', len(nodes))
 
     # Collect direct subclass relations where target is a class URI.
     # Anonymous OWL restriction nodes are intentionally skipped here.
