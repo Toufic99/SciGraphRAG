@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SciGraphRAG — GraphRAG biomédical explicable</title>
+<style>
+  :root {
+    --fond: #fbfbfa; --carte: #fff; --encre: #1a1c1a; --encre-doux: #555955;
+    --encre-pale: #868b86; --trait: #e2e4e1;
+    --accent: #1f5e4a; --accent-fond: #e9f2ee;
+    --graphe: #6b4d8f; --graphe-fond: #f0ebf6;
+    --alerte: #8a5a12; --alerte-fond: #fbf2e0;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond:#101211; --carte:#181b19; --encre:#e6e8e5; --encre-doux:#a4a9a4;
+      --encre-pale:#7a7f7a; --trait:#292d2a;
+      --accent:#7cc4a8; --accent-fond:#16241f;
+      --graphe:#b49ad4; --graphe-fond:#1f1a28;
+      --alerte:#d9a758; --alerte-fond:#2a2113;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 1.2rem 5rem; background: var(--fond); color: var(--encre);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 54rem; margin: 0 auto; }
+  header { padding: 3rem 0 1.4rem; border-bottom: 2px solid var(--encre); margin-bottom: 1.6rem; }
+  h1 { font-size: clamp(1.7rem, 4.5vw, 2.4rem); margin: 0 0 .5rem; letter-spacing: -.02em; }
+  .sous { color: var(--encre-doux); margin: 0; max-width: 40rem; }
+
+  /* En pied de page : le contenu du graphe est une précision, pas une accroche. */
+  #stats { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-bottom: .6rem;
+           font-family: var(--mono); font-size: .8rem; color: var(--encre-pale); }
+  #stats b { color: var(--encre-doux); font-weight: 600; }
+
+  form { display: flex; gap: .6rem; flex-wrap: wrap; margin-bottom: .8rem; }
+  input[type=text] {
+    flex: 1 1 22rem; padding: .75rem .9rem; font-size: 1rem; font-family: inherit;
+    border: 1px solid var(--trait); border-radius: 4px; background: var(--carte); color: var(--encre);
+  }
+  input[type=text]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  button {
+    padding: .75rem 1.3rem; font-size: 1rem; font-weight: 600; font-family: inherit;
+    border: none; border-radius: 4px; background: var(--accent); color: var(--fond); cursor: pointer;
+  }
+  button:disabled { opacity: .5; cursor: wait; }
+  .exemples { font-size: .86rem; color: var(--encre-pale); margin-bottom: 2rem; }
+  .exemples a { color: var(--accent); cursor: pointer; margin-right: .9rem; text-decoration: underline; }
+
+  section { margin-bottom: 2rem; }
+  h2 { font-size: .76rem; text-transform: uppercase; letter-spacing: .11em;
+       color: var(--encre-pale); font-family: var(--mono); margin: 0 0 .7rem; }
+
+  .puce { display: inline-block; padding: .3rem .7rem; margin: 0 .4rem .4rem 0;
+          background: var(--accent-fond); color: var(--accent);
+          border-radius: 3px; font-size: .88rem; font-weight: 600; }
+  .puce small { font-weight: 400; opacity: .75; }
+
+  .chemin { font-family: var(--mono); font-size: .84rem; padding: .32rem .7rem;
+            background: var(--graphe-fond); color: var(--graphe);
+            border-left: 2px solid var(--graphe); margin-bottom: .22rem;
+            overflow-x: auto; white-space: nowrap; }
+
+  /* L'apport propre du graphe : la seule chose que le visiteur doit retenir. */
+  .apport { background: var(--graphe-fond); border-left: 3px solid var(--graphe);
+            color: var(--graphe); padding: .8rem 1.1rem; margin-bottom: 1.1rem;
+            border-radius: 3px; font-size: .92rem; }
+  .apport b { font-weight: 680; }
+
+  /* Les deux directions de lecture, séparées : un concept a ~2 parents et ~20
+     enfants, les mélanger noie la généralisation. */
+  h3.sens { font-size: .82rem; font-weight: 600; color: var(--encre-doux);
+            margin: 1rem 0 .4rem; }
+  h3.sens:first-of-type { margin-top: 0; }
+  h3.sens small { font-weight: 400; color: var(--encre-pale); }
+
+  .pub { background: var(--carte); border: 1px solid var(--trait);
+         padding: .85rem 1rem; margin-bottom: .7rem; border-radius: 4px; }
+  .pub-tete { display: flex; justify-content: space-between; gap: 1rem;
+              font-family: var(--mono); font-size: .76rem; color: var(--encre-pale); margin-bottom: .3rem; }
+  .pub-titre { font-weight: 620; margin-bottom: .35rem; }
+  .pub-titre a { color: var(--encre); text-decoration: none; }
+  .pub-titre a:hover { text-decoration: underline; }
+  .pub-extrait { font-size: .89rem; color: var(--encre-doux); }
+  .score { color: var(--accent); font-weight: 600; }
+
+  .reponse { background: var(--accent-fond); border-left: 3px solid var(--accent);
+             padding: 1rem 1.15rem; white-space: pre-wrap; }
+  .note { font-size: .87rem; color: var(--encre-pale); font-style: italic; }
+  .alerte { background: var(--alerte-fond); border-left: 3px solid var(--alerte);
+            color: var(--alerte); padding: .85rem 1.1rem; margin-bottom: 1.6rem;
+            border-radius: 3px; }
+  .alerte b { display: block; margin-bottom: .2rem; }
+  .attenue { opacity: .55; }
+  .vide { color: var(--encre-pale); font-style: italic; }
+  footer { border-top: 1px solid var(--trait); padding-top: 1rem; margin-top: 3rem;
+           font-size: .82rem; color: var(--encre-pale); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>SciGraphRAG</h1>
+  <p class="sous">Questions-réponses biomédicales où rien n'est à croire sur parole :
+  chaque affirmation renvoie soit à un PMID, soit à une relation d'ontologie que vous pouvez
+  parcourir vous-même. La recherche vectorielle n'est que le point d'entrée — c'est la traversée
+  du graphe qui fait apparaître ce que les résumés ne disent pas.</p>
+</header>
+
+<form id="f">
+  <input type="text" id="q" placeholder="Ex. : DNA repair after alkylation damage" autocomplete="off">
+  <label style="display:flex;align-items:center;gap:.4rem;font-size:.88rem;color:var(--encre-doux)">
+    <input type="checkbox" id="gen"> rédiger la réponse
+  </label>
+  <button type="submit" id="btn">Interroger</button>
+</form>
+
+<p class="exemples">
+  Essayer :
+  <a onclick="poser('DNA repair after alkylation damage')">réparation de l'ADN</a>
+  <a onclick="poser('apoptosis regulation pathways')">apoptose</a>
+  <a onclick="poser('mitochondrial organization and biogenesis')">mitochondries</a>
+</p>
+
+<div id="resultat"></div>
+
+<footer>
+  <div id="stats">chargement…</div>
+  Gene Ontology + Reactome dans Neo4j, enrichis d'abstracts PubMed.
+  Recherche vectorielle locale (multilingual-e5-large, index natif Neo4j) puis traversée du graphe.
+  Le modèle est multilingue par choix : questions en français sur un corpus anglophone.
+</footer>
+
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+
+fetch('/api/stats').then(r => r.json()).then(s => {
+  $('#stats').innerHTML = [
+    ['processus GO', s.processus], ['pathways', s.pathways],
+    ['protéines', s.proteines], ['publications', s.publications],
+    ['liens MENTIONS', s.mentions],
+  ].map(([l, v]) => `<span><b>${v ?? '—'}</b> ${l}</span>`).join('');
+}).catch(() => $('#stats').textContent = 'graphe injoignable — Neo4j est-il démarré ?');
+
+function poser(texte) { $('#q').value = texte; $('#f').requestSubmit(); }
+
+function echapper(t) {
+  const d = document.createElement('div'); d.textContent = t ?? ''; return d.innerHTML;
+}
+
+$('#f').addEventListener('submit', async e => {
+  e.preventDefault();
+  const texte = $('#q').value.trim();
+  if (!texte) return;
+
+  $('#btn').disabled = true;
+  $('#resultat').innerHTML = '<p class="vide">Recherche en cours…</p>';
+
+  try {
+    const r = await fetch('/api/question', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({texte, k: 5, generer_reponse: $('#gen').checked}),
+    });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    afficher(await r.json());
+  } catch (err) {
+    $('#resultat').innerHTML = `<p class="vide">Erreur : ${echapper(err.message)}</p>`;
+  } finally {
+    $('#btn').disabled = false;
+  }
+});
+
+function afficher(d) {
+  let h = '';
+
+  // Sans cet avertissement, l'outil présente le bruit le mieux classé
+  // exactement comme une vraie réponse.
+  if (d.pertinent === false) {
+    h += `<div class="alerte">
+            <b>Le corpus ne couvre probablement pas cette question.</b>
+            Les scores de similarité sont plats : les résultats ci-dessous sont
+            les plus proches trouvés, mais ils sont vraisemblablement hors sujet.
+          </div>`;
+  }
+
+  if (d.reponse) {
+    h += `<section><h2>Réponse</h2><div class="reponse">${echapper(d.reponse)}</div></section>`;
+  } else if (d.erreur_generation) {
+    h += `<section><p class="note">${echapper(d.erreur_generation)}</p></section>`;
+  }
+
+  h += '<section><h2>Concepts du graphe</h2>';
+  h += d.concepts.length
+    ? d.concepts.map(c =>
+        `<span class="puce">${echapper(c.nom)} <small>${c.publications} pub.</small></span>`).join('')
+    : '<p class="vide">Aucun concept rattaché.</p>';
+  h += '</section>';
+
+  h += '<section><h2>Chemins ontologiques — ce qui rend la réponse vérifiable</h2>';
+
+  const rels = d.relations || [];
+  const apport = d.apport_graphe;
+
+  // Le chiffre qui résume le projet : sans lui, les chemins ci-dessous ne sont
+  // qu'une liste de jargon dont on ne voit pas l'intérêt.
+  if (apport && apport.concepts_du_graphe > 0) {
+    h += `<div class="apport">
+            <b>${apport.concepts_du_graphe} des ${apport.concepts_total} concepts ci-dessous
+            ne figurent dans aucun résumé retrouvé.</b>
+            Ils viennent de la structure curatée de Gene Ontology, pas du texte —
+            c'est ce qu'une recherche par similarité seule ne peut pas produire.
+          </div>`;
+  }
+
+  const chemin = r =>
+    `<div class="chemin">${echapper(r.source)} --${echapper(r.type)}--> ${echapper(r.cible)}</div>`;
+
+  const groupes = [
+    ['generalisation', 'Ce dont ces concepts relèvent'],
+    ['specialisation', 'Et ce qu\'ils recouvrent'],
+    ['composition', 'Protéines impliquées'],
+  ];
+
+  let ecrit = false;
+  for (const [sens, titre] of groupes) {
+    const bloc = rels.filter(r => r.sens === sens);
+    if (!bloc.length) continue;
+    h += `<h3 class="sens">${titre} <small>(${bloc.length})</small></h3>`;
+    h += bloc.map(chemin).join('');
+    ecrit = true;
+  }
+  if (!ecrit) h += '<p class="vide">Aucune relation trouvée.</p>';
+  h += '</section>';
+
+  h += `<section${d.pertinent === false ? ' class="attenue"' : ''}>`;
+  h += `<h2>Publications (${d.publications.length})</h2>`;
+  h += d.publications.length
+    ? d.publications.map(p => `
+        <div class="pub">
+          <div class="pub-tete">
+            <span>PMID ${echapper(p.pmid)} · ${p.annee ?? '—'} · ${echapper(p.journal || 'journal inconnu')}</span>
+            <span class="score">${p.score}</span>
+          </div>
+          <div class="pub-titre">
+            <a href="https://pubmed.ncbi.nlm.nih.gov/${encodeURIComponent(p.pmid)}/"
+               target="_blank" rel="noopener">${echapper(p.titre)}</a>
+          </div>
+          <div class="pub-extrait">${echapper(p.extrait)}…</div>
+        </div>`).join('')
+    : '<p class="vide">Aucune publication.</p>';
+  h += '</section>';
+
+  $('#resultat').innerHTML = h;
+}
+</script>
+</body>
+</html>
