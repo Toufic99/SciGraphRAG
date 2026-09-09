@@ -20,7 +20,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
-from pydantic import BaseModel
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel, Field
 
 RACINE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RACINE / "src"))
@@ -31,6 +32,13 @@ from reasoning.retrieval import recuperer_contexte  # noqa: E402
 load_dotenv(RACINE / ".env")
 
 app = FastAPI(title="SciGraphRAG", description="GraphRAG biomédical explicable")
+
+# Polices servies localement plutôt que depuis un CDN : le pipeline entier
+# fonctionne sans service externe, la démo aussi. Si le dossier est absent, la
+# page reste fonctionnelle — les @font-face retombent sur les polices système.
+_STATIQUE = Path(__file__).parent / "static"
+if _STATIQUE.is_dir():
+    app.mount("/static", StaticFiles(directory=_STATIQUE), name="static")
 
 # Un seul client réutilisé : ouvrir une connexion Neo4j par requête est coûteux.
 _client: Neo4jClient | None = None
@@ -46,7 +54,7 @@ def client() -> Neo4jClient:
 
 class Question(BaseModel):
     texte: str
-    k: int = 5
+    k: int = Field(default=5, ge=1, le=50)
     generer_reponse: bool = False
 
 

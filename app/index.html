@@ -5,82 +5,140 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SciGraphRAG — GraphRAG biomédical explicable</title>
 <style>
+  @font-face { font-family:'Clash Display'; src:url('/static/fonts/ClashDisplay-600.woff2') format('woff2');
+               font-weight:600; font-display:swap; }
+  @font-face { font-family:'Clash Display'; src:url('/static/fonts/ClashDisplay-700.woff2') format('woff2');
+               font-weight:700; font-display:swap; }
+  @font-face { font-family:'Satoshi'; src:url('/static/fonts/Satoshi-400.woff2') format('woff2');
+               font-weight:400; font-display:swap; }
+  @font-face { font-family:'Satoshi'; src:url('/static/fonts/Satoshi-500.woff2') format('woff2');
+               font-weight:500; font-display:swap; }
+  @font-face { font-family:'Satoshi'; src:url('/static/fonts/Satoshi-700.woff2') format('woff2');
+               font-weight:700; font-display:swap; }
+
   :root {
-    --fond: #fbfbfa; --carte: #fff; --encre: #1a1c1a; --encre-doux: #555955;
-    --encre-pale: #868b86; --trait: #e2e4e1;
-    --accent: #1f5e4a; --accent-fond: #e9f2ee;
-    --graphe: #6b4d8f; --graphe-fond: #f0ebf6;
-    --alerte: #8a5a12; --alerte-fond: #fbf2e0;
+    --fond: #fafaf8; --carte: #fff; --encre: #17191b; --encre-doux: #4f5459;
+    --encre-pale: #8a9096; --trait: #e4e6e3;
+    --accent: #0d7a5f; --accent-fond: #e7f4ef; --accent-bord: #bfe3d5;
+    --graphe: #6446ad; --graphe-fond: #f1ecfb; --graphe-bord: #d9cdf2;
+    --alerte: #8f5d0d; --alerte-fond: #fcf3e1; --alerte-bord: #ecd6a8;
+    --ombre: 0 1px 2px rgba(20,25,30,.05), 0 8px 24px -14px rgba(20,25,30,.18);
+    --ombre-fine: 0 1px 2px rgba(20,25,30,.04);
+    --titre: 'Clash Display', 'Satoshi', system-ui, sans-serif;
     --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --fond:#101211; --carte:#181b19; --encre:#e6e8e5; --encre-doux:#a4a9a4;
-      --encre-pale:#7a7f7a; --trait:#292d2a;
-      --accent:#7cc4a8; --accent-fond:#16241f;
-      --graphe:#b49ad4; --graphe-fond:#1f1a28;
-      --alerte:#d9a758; --alerte-fond:#2a2113;
+      --fond:#0e100f; --carte:#171a19; --encre:#e9ebe8; --encre-doux:#a9aeab;
+      --encre-pale:#767c79; --trait:#272b29;
+      --accent:#4fd1a5; --accent-fond:#102923; --accent-bord:#1d4a3c;
+      --graphe:#b79ae8; --graphe-fond:#1d1830; --graphe-bord:#342a52;
+      --alerte:#e0ab5c; --alerte-fond:#2a2113; --alerte-bord:#4a3a1c;
+      --ombre: 0 1px 2px rgba(0,0,0,.4), 0 12px 32px -16px rgba(0,0,0,.7);
+      --ombre-fine: 0 1px 2px rgba(0,0,0,.35);
     }
   }
   * { box-sizing: border-box; }
   body {
-    margin: 0; padding: 0 1.2rem 5rem; background: var(--fond); color: var(--encre);
-    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6; -webkit-font-smoothing: antialiased;
+    margin: 0; padding: 0 1.4rem 5rem; background: var(--fond); color: var(--encre);
+    font-family: 'Satoshi', ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.62; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
   }
-  .wrap { max-width: 54rem; margin: 0 auto; }
-  header { padding: 3rem 0 1.4rem; border-bottom: 2px solid var(--encre); margin-bottom: 1.6rem; }
-  h1 { font-size: clamp(1.7rem, 4.5vw, 2.4rem); margin: 0 0 .5rem; letter-spacing: -.02em; }
-  .sous { color: var(--encre-doux); margin: 0; max-width: 40rem; }
+  .wrap { max-width: 56rem; margin: 0 auto; }
+  header { padding: 4rem 0 2rem; margin-bottom: 2rem; position: relative; }
+  header::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+    background: linear-gradient(90deg, var(--accent), var(--graphe) 55%, transparent);
+    opacity: .55;
+  }
+  h1 { font-family: var(--titre); font-weight: 700; font-size: clamp(2rem, 5.5vw, 3rem);
+       margin: 0 0 .7rem; letter-spacing: -.025em; line-height: 1.05; }
+  .sous { color: var(--encre-doux); margin: 0; max-width: 44rem; font-size: 1.02rem; }
 
   /* En pied de page : le contenu du graphe est une précision, pas une accroche. */
   #stats { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-bottom: .6rem;
            font-family: var(--mono); font-size: .8rem; color: var(--encre-pale); }
   #stats b { color: var(--encre-doux); font-weight: 600; }
 
-  form { display: flex; gap: .6rem; flex-wrap: wrap; margin-bottom: .8rem; }
+  form { display: flex; gap: .7rem; flex-wrap: wrap; margin-bottom: 1rem; }
   input[type=text] {
-    flex: 1 1 22rem; padding: .75rem .9rem; font-size: 1rem; font-family: inherit;
-    border: 1px solid var(--trait); border-radius: 4px; background: var(--carte); color: var(--encre);
+    flex: 1 1 24rem; padding: .9rem 1.1rem; font-size: 1rem; font-family: inherit;
+    border: 1px solid var(--trait); border-radius: 11px; background: var(--carte);
+    color: var(--encre); box-shadow: var(--ombre-fine); transition: border-color .15s, box-shadow .15s;
   }
-  input[type=text]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  input[type=text]:focus {
+    outline: none; border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-fond), var(--ombre-fine);
+  }
   button {
-    padding: .75rem 1.3rem; font-size: 1rem; font-weight: 600; font-family: inherit;
-    border: none; border-radius: 4px; background: var(--accent); color: var(--fond); cursor: pointer;
+    padding: .9rem 1.6rem; font-size: .98rem; font-weight: 700; font-family: inherit;
+    border: none; border-radius: 11px; background: var(--accent); color: var(--fond);
+    cursor: pointer; letter-spacing: .01em; box-shadow: var(--ombre-fine);
+    transition: filter .15s, transform .1s;
   }
-  button:disabled { opacity: .5; cursor: wait; }
-  .exemples { font-size: .86rem; color: var(--encre-pale); margin-bottom: 2rem; }
-  .exemples a { color: var(--accent); cursor: pointer; margin-right: .9rem; text-decoration: underline; }
+  button:hover:not(:disabled) { filter: brightness(1.08); }
+  button:active:not(:disabled) { transform: translateY(1px); }
+  button:disabled { opacity: .45; cursor: wait; }
+  .exemples { font-size: .88rem; color: var(--encre-pale); margin-bottom: 2.6rem; }
+  .exemples a { color: var(--accent); cursor: pointer; margin-right: .5rem;
+                text-decoration: none; border-bottom: 1px solid var(--accent-bord);
+                padding-bottom: 1px; }
+  .exemples a:hover { border-bottom-color: var(--accent); }
 
-  section { margin-bottom: 2rem; }
-  h2 { font-size: .76rem; text-transform: uppercase; letter-spacing: .11em;
-       color: var(--encre-pale); font-family: var(--mono); margin: 0 0 .7rem; }
+  section { margin-bottom: 2.6rem; }
+  h2 { font-size: .72rem; text-transform: uppercase; letter-spacing: .13em;
+       color: var(--encre-pale); font-weight: 700; margin: 0 0 .9rem; }
 
-  .puce { display: inline-block; padding: .3rem .7rem; margin: 0 .4rem .4rem 0;
+  .puce { display: inline-block; padding: .34rem .75rem; margin: 0 .4rem .45rem 0;
           background: var(--accent-fond); color: var(--accent);
-          border-radius: 3px; font-size: .88rem; font-weight: 600; }
-  .puce small { font-weight: 400; opacity: .75; }
+          border: 1px solid var(--accent-bord);
+          border-radius: 8px; font-size: .88rem; font-weight: 500; }
+  .puce small { font-weight: 400; opacity: .7; }
 
-  .chemin { font-family: var(--mono); font-size: .84rem; padding: .32rem .7rem;
-            background: var(--graphe-fond); color: var(--graphe);
-            border-left: 2px solid var(--graphe); margin-bottom: .22rem;
-            overflow-x: auto; white-space: nowrap; }
+  /* Chemin isolé : même langage visuel que les groupes, pas une barre monospace.
+     Les noms de concepts sont du texte a lire, seul le type de relation reste
+     technique et tient dans un petit badge. */
+  .chemin { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem;
+            padding: .55rem .9rem; background: var(--graphe-fond);
+            border: 1px solid var(--graphe-bord); border-radius: 9px;
+            margin-bottom: .3rem; font-size: .89rem; }
+  .c-src { color: var(--encre-doux); }
+  .c-rel { font-family: var(--mono); font-size: .68rem; letter-spacing: .06em;
+           color: var(--graphe); background: var(--carte);
+           border: 1px solid var(--graphe-bord); border-radius: 5px;
+           padding: .1rem .4rem; white-space: nowrap; }
+  .c-cible { color: var(--graphe); font-weight: 600; }
+
+  /* Groupe compact : quand N relations partagent cible et type, on ne repete pas
+     « --IS_A--> DNA repair » vingt fois. La cible devient un titre, les sources
+     des puces. Vingt lignes deviennent trois. */
+  .groupe { border: 1px solid var(--graphe-bord); border-radius: 11px;
+            background: var(--graphe-fond); padding: .85rem 1rem; margin-bottom: .5rem; }
+  .groupe-tete { font-size: .84rem; color: var(--graphe); margin-bottom: .55rem; }
+  .groupe-tete b { font-weight: 700; }
+  .groupe-tete code { font-family: var(--mono); font-size: .76rem; opacity: .8; }
+  .gpuce { display: inline-block; padding: .28rem .65rem; margin: 0 .32rem .32rem 0;
+           background: var(--carte); color: var(--graphe);
+           border: 1px solid var(--graphe-bord); border-radius: 7px;
+           font-size: .84rem; }
 
   /* L'apport propre du graphe : la seule chose que le visiteur doit retenir. */
-  .apport { background: var(--graphe-fond); border-left: 3px solid var(--graphe);
-            color: var(--graphe); padding: .8rem 1.1rem; margin-bottom: 1.1rem;
-            border-radius: 3px; font-size: .92rem; }
-  .apport b { font-weight: 680; }
+  .apport { background: var(--graphe-fond); border: 1px solid var(--graphe-bord);
+            border-left: 3px solid var(--graphe);
+            color: var(--graphe); padding: .95rem 1.15rem; margin-bottom: 1.3rem;
+            border-radius: 10px; font-size: .93rem; }
+  .apport b { font-weight: 700; }
 
   /* Les deux directions de lecture, séparées : un concept a ~2 parents et ~20
      enfants, les mélanger noie la généralisation. */
-  h3.sens { font-size: .82rem; font-weight: 600; color: var(--encre-doux);
-            margin: 1rem 0 .4rem; }
+  h3.sens { font-size: .8rem; font-weight: 700; color: var(--encre-doux);
+            margin: 1.3rem 0 .5rem; letter-spacing: .01em; }
   h3.sens:first-of-type { margin-top: 0; }
   h3.sens small { font-weight: 400; color: var(--encre-pale); }
 
   .pub { background: var(--carte); border: 1px solid var(--trait);
-         padding: .85rem 1rem; margin-bottom: .7rem; border-radius: 4px; }
+         padding: 1rem 1.15rem; margin-bottom: .75rem; border-radius: 11px;
+         box-shadow: var(--ombre-fine); }
   .pub-tete { display: flex; justify-content: space-between; gap: 1rem;
               font-family: var(--mono); font-size: .76rem; color: var(--encre-pale); margin-bottom: .3rem; }
   .pub-titre { font-weight: 620; margin-bottom: .35rem; }
@@ -89,17 +147,19 @@
   .pub-extrait { font-size: .89rem; color: var(--encre-doux); }
   .score { color: var(--accent); font-weight: 600; }
 
-  .reponse { background: var(--accent-fond); border-left: 3px solid var(--accent);
-             padding: 1rem 1.15rem; white-space: pre-wrap; }
+  .reponse { background: var(--accent-fond); border: 1px solid var(--accent-bord);
+             border-left: 3px solid var(--accent); border-radius: 10px;
+             padding: 1.1rem 1.25rem; white-space: pre-wrap; }
   .note { font-size: .87rem; color: var(--encre-pale); font-style: italic; }
-  .alerte { background: var(--alerte-fond); border-left: 3px solid var(--alerte);
-            color: var(--alerte); padding: .85rem 1.1rem; margin-bottom: 1.6rem;
-            border-radius: 3px; }
-  .alerte b { display: block; margin-bottom: .2rem; }
+  .alerte { background: var(--alerte-fond); border: 1px solid var(--alerte-bord);
+            border-left: 3px solid var(--alerte);
+            color: var(--alerte); padding: .95rem 1.15rem; margin-bottom: 1.8rem;
+            border-radius: 10px; }
+  .alerte b { display: block; margin-bottom: .25rem; font-weight: 700; }
   .attenue { opacity: .55; }
   .vide { color: var(--encre-pale); font-style: italic; }
-  footer { border-top: 1px solid var(--trait); padding-top: 1rem; margin-top: 3rem;
-           font-size: .82rem; color: var(--encre-pale); }
+  footer { border-top: 1px solid var(--trait); padding-top: 1.4rem; margin-top: 4rem;
+           font-size: .82rem; color: var(--encre-pale); line-height: 1.7; }
 </style>
 </head>
 <body>
@@ -222,7 +282,41 @@ function afficher(d) {
   }
 
   const chemin = r =>
-    `<div class="chemin">${echapper(r.source)} --${echapper(r.type)}--> ${echapper(r.cible)}</div>`;
+    `<div class="chemin">
+       <span class="c-src">${echapper(r.source)}</span>
+       <span class="c-rel">${echapper(r.type)}</span>
+       <span class="c-cible">${echapper(r.cible)}</span>
+     </div>`;
+
+  // Quand plusieurs relations pointent vers la même cible avec le même type,
+  // les écrire en entier répète la cible autant de fois. « X --IS_A--> DNA repair »
+  // vingt fois, c'est vingt lignes pour une seule information : DNA repair a
+  // vingt sous-types. On sort la cible en titre et on liste les sources.
+  const SEUIL_GROUPE = 3;
+
+  function rendre(bloc) {
+    const paquets = new Map();
+    for (const r of bloc) {
+      const cle = r.type + '\x1f' + r.cible;
+      if (!paquets.has(cle)) paquets.set(cle, []);
+      paquets.get(cle).push(r);
+    }
+    let out = '';
+    const isoles = [];
+    for (const [, membres] of paquets) {
+      if (membres.length < SEUIL_GROUPE) { isoles.push(...membres); continue; }
+      const { type, cible } = membres[0];
+      out += `<div class="groupe">
+                <div class="groupe-tete">
+                  <b>${echapper(cible)}</b>
+                  <code>&lt;-- ${echapper(type)} --</code>
+                  ${membres.length} concepts
+                </div>
+                ${membres.map(m => `<span class="gpuce">${echapper(m.source)}</span>`).join('')}
+              </div>`;
+    }
+    return out + isoles.map(chemin).join('');
+  }
 
   const groupes = [
     ['generalisation', 'Ce dont ces concepts relèvent'],
@@ -235,7 +329,7 @@ function afficher(d) {
     const bloc = rels.filter(r => r.sens === sens);
     if (!bloc.length) continue;
     h += `<h3 class="sens">${titre} <small>(${bloc.length})</small></h3>`;
-    h += bloc.map(chemin).join('');
+    h += rendre(bloc);
     ecrit = true;
   }
   if (!ecrit) h += '<p class="vide">Aucune relation trouvée.</p>';
