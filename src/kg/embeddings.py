@@ -63,10 +63,13 @@ MATCH (p:Publication {pmid: row.pmid})
 CALL db.create.setNodeVectorProperty(p, 'embedding', row.embedding)
 """
 
+# OPTIONAL : une publication sans lien MENTIONS (import interrompu entre la
+# création du noeud et celle de l'arête) doit rester visible dans ce test de
+# vérification, comme elle le serait dans PUBLICATIONS_PROCHES (retrieval.py).
 RECHERCHE_VECTORIELLE = f"""
 CALL db.index.vector.queryNodes('{NOM_INDEX}', $k, $vecteur)
 YIELD node AS pub, score
-MATCH (pub)-[:MENTIONS]->(c)
+OPTIONAL MATCH (pub)-[:MENTIONS]->(c)
 RETURN pub.pmid AS pmid, pub.title AS titre, pub.year AS annee,
        left(pub.abstract, 400) AS extrait, score,
        collect(DISTINCT coalesce(c.label, c.name)) AS concepts
@@ -83,15 +86,18 @@ ORDER BY score DESC
 # signale la dérive mais ne recalibre pas tout seul.
 SEUIL_PERTINENCE = 0.90
 
-_modele: SentenceTransformer | None = None
+_modeles: dict[str, SentenceTransformer] = {}
 
 
 def charger_modele(nom: str = MODELE_DEFAUT) -> SentenceTransformer:
-    """Charge le modèle une seule fois par processus (il pèse et met du temps)."""
-    global _modele
-    if _modele is None:
-        _modele = SentenceTransformer(nom)
-    return _modele
+    """Charge chaque modèle une seule fois par processus (il pèse et met du temps).
+
+    Indexé par nom : `encoder(..., nom_modele=X)` puis `nom_modele=Y` ne doit pas
+    rendre les vecteurs de X sous prétexte que X était déjà chargé.
+    """
+    if nom not in _modeles:
+        _modeles[nom] = SentenceTransformer(nom)
+    return _modeles[nom]
 
 
 def _encoder(textes: list[str], nom_modele: str) -> list[list[float]]:

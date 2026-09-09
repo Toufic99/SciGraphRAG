@@ -75,6 +75,10 @@ def main() -> None:
         print("Vecteurs et index effacés (changement de modèle)")
 
     client.run_query(CREER_INDEX)
+    # L'index se peuple de façon asynchrone : sans cette attente, le test de
+    # recherche en fin de script peut renvoyer « aucun résultat » juste après
+    # un encodage réussi (surtout au premier passage ou après --reinitialiser).
+    client.run_query("CALL db.awaitIndexes(300)")
     print(f"Index vectoriel prêt ({DIMENSIONS} dimensions, cosinus)")
 
     lignes = [dict(r) for r in client.run_query(PUBLICATIONS_SANS_VECTEUR)]

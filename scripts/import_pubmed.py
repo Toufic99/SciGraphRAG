@@ -147,8 +147,8 @@ def main() -> None:
     print(f"Concepts sans résultat: {sans_resultat}")
 
     stats = client.run_query("""
-        MATCH (pub:Publication) WITH count(pub) AS pubs
-        MATCH ()-[m:MENTIONS]->() RETURN pubs, count(m) AS mentions
+        RETURN COUNT { (pub:Publication) } AS pubs,
+               COUNT { ()-[m:MENTIONS]->() } AS mentions
     """)
     if stats:
         r = stats[0]

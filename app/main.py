@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import os
 import sys
+import threading
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -41,14 +42,20 @@ if _STATIQUE.is_dir():
     app.mount("/static", StaticFiles(directory=_STATIQUE), name="static")
 
 # Un seul client réutilisé : ouvrir une connexion Neo4j par requête est coûteux.
+# Le verrou évite que deux premières requêtes concurrentes (les endpoints sync
+# tournent dans un threadpool) ouvrent chacune un driver, dont l'un serait orphelin.
 _client: Neo4jClient | None = None
+_client_lock = threading.Lock()
 
 
 def client() -> Neo4jClient:
     global _client
     if _client is None:
-        _client = Neo4jClient()
-        _client.connect()
+        with _client_lock:
+            if _client is None:
+                c = Neo4jClient()
+                c.connect()
+                _client = c
     return _client
 
 
@@ -66,13 +73,15 @@ def page() -> str:
 @app.get("/api/stats")
 def stats() -> dict:
     """Chiffres du graphe, affichés en en-tête de la démo."""
+    # COUNT {} indépendants : une chaîne de MATCH s'effondre à zéro ligne dès
+    # qu'un label est vide (Publication avant l'import PubMed), ce qui rendait
+    # l'en-tête entièrement blanc.
     requete = """
-    MATCH (b:BiologicalProcess) WITH count(b) AS processus
-    MATCH (p:Pathway)           WITH processus, count(p) AS pathways
-    MATCH (pr:Protein)          WITH processus, pathways, count(pr) AS proteines
-    MATCH (pub:Publication)     WITH processus, pathways, proteines, count(pub) AS publications
-    MATCH ()-[m:MENTIONS]->()
-    RETURN processus, pathways, proteines, publications, count(m) AS mentions
+    RETURN COUNT { (b:BiologicalProcess) } AS processus,
+           COUNT { (p:Pathway) }           AS pathways,
+           COUNT { (pr:Protein) }          AS proteines,
+           COUNT { (pub:Publication) }     AS publications,
+           COUNT { ()-[m:MENTIONS]->() }   AS mentions
     """
     r = client().run_query(requete)
     return dict(r[0]) if r else {}
