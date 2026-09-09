@@ -107,7 +107,7 @@ def main() -> None:
         print("Aucun concept dans le graphe — importez GO/Reactome d'abord.")
         sys.exit(1)
 
-    if args.concepts:
+    if args.concepts is not None:
         concepts = concepts[:args.concepts]
 
     duree = len(concepts) * 2 * 0.4 / 60
