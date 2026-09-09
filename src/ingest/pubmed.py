@@ -43,12 +43,29 @@ class Publication:
 
 
 def _get(endpoint: str, params: dict) -> requests.Response | None:
+    """Un GET E-utilities, avec une relance sur échec transitoire.
+
+    NCBI renvoie fréquemment 429 sous charge, et un import complet enchaîne des
+    centaines de requêtes. Sans relance, un 429 passager fait passer un concept
+    pour « sans résultat » et tronque le corpus en silence — inacceptable pour
+    un pipeline qui se veut reproductible.
+    """
     params = {**params, "tool": TOOL, "email": EMAIL}
-    try:
-        r = requests.get(f"{BASE}/{endpoint}", params=params, timeout=TIMEOUT)
-        return r if r.status_code == 200 else None
-    except requests.RequestException:
-        return None
+    for tentative in range(3):
+        try:
+            r = requests.get(f"{BASE}/{endpoint}", params=params, timeout=TIMEOUT)
+            if r.status_code == 200:
+                return r
+            if r.status_code in (429, 500, 502, 503, 504) and tentative < 2:
+                time.sleep(2 ** tentative)
+                continue
+            return None
+        except requests.RequestException:
+            if tentative < 2:
+                time.sleep(2 ** tentative)
+                continue
+            return None
+    return None
 
 
 def rechercher_pmids(terme: str, limite: int = 20) -> list[str]:
