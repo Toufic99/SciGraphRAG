@@ -1,29 +1,58 @@
 # SciGraphRAG
 
+**GraphRAG biomédical explicable — chaque réponse est traçable jusqu'à un PMID ou une relation d'ontologie.**
+
+[![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Neo4j](https://img.shields.io/badge/Neo4j-5.26-018BFF?logo=neo4j&logoColor=white)](https://neo4j.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Tests](https://img.shields.io/badge/tests-22%20passed-0d7a5f)](tests/)
+[![Licence MIT](https://img.shields.io/badge/licence-MIT-6446ad)](LICENSE)
+
 Moteur de questions-réponses biomédicales adossé à un graphe de connaissances, conçu pour l'**explicabilité** : chaque réponse expose les concepts, les chemins ontologiques et les publications sur lesquels elle repose.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/demo-sombre.png">
+  <img alt="La démo répondant à « DNA repair after alkylation damage » : concepts du graphe, chemins ontologiques et publications sourcées" src="docs/images/demo.png">
+</picture>
+
+<sub>La démo web, sur une vraie question. [Voir la page entière](docs/images/demo-complete.png) — publications et scores compris.</sub>
 
 ## Ce qui distingue ce projet d'un RAG classique
 
 Un RAG ordinaire renvoie des extraits de texte proches sémantiquement, sans lien entre eux. Ici, la recherche vectorielle n'est que la première étape : le système remonte ensuite aux concepts mentionnés par les publications trouvées, puis explore leur voisinage dans l'ontologie.
 
-Sur la question *« DNA repair after alkylation damage »*, le pipeline restitue par exemple la chaîne suivante, absente de tout abstract :
+**Ce que ça change, en une image** — sur la question *« DNA repair after alkylation damage »*, 4 des 7 concepts restitués n'apparaissent dans **aucun** des résumés retrouvés. Ils viennent de la structure curatée de Gene Ontology :
 
-```
-DNA alkylation repair --IS_A--> DNA repair --IS_A--> DNA damage response
-```
+![Concepts issus des abstracts contre concepts issus de la traversée de l'ontologie](docs/images/apport-du-graphe.png)
 
-Cette information provient de la structure curatée de Gene Ontology, pas du texte. C'est elle qui rend la réponse vérifiable : l'utilisateur peut contrôler d'où vient chaque affirmation.
+<sub>Figure reproductible : `PYTHONPATH=src python scripts/figure_apport_graphe.py`</sub>
+
+En vert, ce qu'une recherche par similarité sait trouver. En violet, ce qu'elle ne peut pas produire — et c'est précisément ce qui rend la réponse vérifiable : l'utilisateur peut contrôler d'où vient chaque affirmation.
 
 ## Architecture du pipeline
 
-```
-Question en langage naturel
-      │
-      ├─ 1. Recherche vectorielle  →  index natif Neo4j sur les abstracts
-      ├─ 2. Concepts mentionnés    →  relation (:Publication)-[:MENTIONS]->(concept)
-      ├─ 3. Voisinage ontologique  →  IS_A, PART_OF, PARTICIPATES_IN
-      │
-      └─ 4. Génération LLM contrainte à citer ses sources
+```mermaid
+flowchart TD
+    Q["Question en langage naturel"]
+
+    subgraph retrieval ["Retrieval hybride"]
+        direction TB
+        V["1 · Recherche vectorielle<br/>index natif Neo4j sur les abstracts"]
+        C["2 · Concepts mentionnés<br/>relation MENTIONS vers le concept"]
+        O["3 · Voisinage ontologique<br/>IS_A · PART_OF · PARTICIPATES_IN"]
+        V --> C --> O
+    end
+
+    Q --> V
+    O --> G["4 · Génération LLM<br/>contrainte à citer ses sources"]
+    G --> R["Réponse tracée<br/>PMID + chemins d'ontologie"]
+
+    style Q fill:#e7f4ef,stroke:#0d7a5f,color:#17191b
+    style V fill:#ffffff,stroke:#0d7a5f,color:#17191b
+    style C fill:#ffffff,stroke:#0d7a5f,color:#17191b
+    style O fill:#f1ecfb,stroke:#6446ad,color:#17191b
+    style G fill:#ffffff,stroke:#8a9096,color:#17191b
+    style R fill:#f1ecfb,stroke:#6446ad,color:#17191b
 ```
 
 Détail complet dans [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
@@ -124,7 +153,9 @@ src/
   reasoning/retrieval.py  retrieval hybride graphe + texte
   reasoning/generation.py construction du prompt et appel LLM
 scripts/                  pipelines d'import et de vectorisation
+  figure_apport_graphe.py figure du README : apport propre de l'ontologie
 app/                      démonstration FastAPI (API + page unique)
+docs/images/              captures et figures, régénérables
 tests/                    calibration du seuil de pertinence (pytest)
 ```
 
