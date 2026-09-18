@@ -10,12 +10,9 @@
 
 Moteur de questions-réponses biomédicales adossé à un graphe de connaissances, conçu pour l'**explicabilité** : chaque réponse expose les concepts, les chemins ontologiques et les publications sur lesquels elle repose.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/images/demo-sombre.png">
-  <img alt="La démo répondant à « DNA repair after alkylation damage » : concepts du graphe, chemins ontologiques et publications sourcées" src="docs/images/demo.png">
-</picture>
+![La démo en action : la question est saisie, puis la réponse expose les concepts du graphe, les chemins ontologiques et les publications sourcées](docs/images/demo.gif)
 
-<sub>La démo web, sur une vraie question. [Voir la page entière](docs/images/demo-complete.png) — publications et scores compris.</sub>
+<sub>Démo réelle, sur le graphe complet. L'attente de calcul a été raccourcie au montage — l'encodage de la question par e5-large prend une dizaine de secondes sur CPU. [Voir la page entière en capture](docs/images/demo-complete.png).</sub>
 
 ## Ce qui distingue ce projet d'un RAG classique
 
