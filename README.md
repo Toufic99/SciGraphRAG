@@ -12,7 +12,7 @@ Moteur de questions-réponses biomédicales adossé à un graphe de connaissance
 
 ![La démo en action : la question est saisie, puis la réponse expose les concepts du graphe, les chemins ontologiques et les publications sourcées](docs/images/demo.gif)
 
-<sub>Démo réelle, sur le graphe complet. L'attente de calcul a été raccourcie au montage — l'encodage de la question par e5-large prend une dizaine de secondes sur CPU. [Voir la page entière en capture](docs/images/demo-complete.png).</sub>
+<sub>Démo réelle, sur le graphe complet, en temps non accéléré. [Voir la page entière en capture](docs/images/demo-complete.png).</sub>
 
 ## Ce qui distingue ce projet d'un RAG classique
 
@@ -20,11 +20,9 @@ Un RAG ordinaire renvoie des extraits de texte proches sémantiquement, sans lie
 
 **Ce que ça change, en une image** — sur la question *« DNA repair after alkylation damage »*, 4 des 7 concepts restitués n'apparaissent dans **aucun** des résumés retrouvés. Ils viennent de la structure curatée de Gene Ontology :
 
-![Concepts issus des abstracts contre concepts issus de la traversée de l'ontologie](docs/images/apport-du-graphe.png)
+![Concepts issus des abstracts contre concepts issus de la traversée de l'ontologie](docs/images/graphe.png)
 
-<sub>Figure reproductible : `PYTHONPATH=src python scripts/figure_apport_graphe.py`</sub>
-
-En vert, ce qu'une recherche par similarité sait trouver. En violet, ce qu'elle ne peut pas produire — et c'est précisément ce qui rend la réponse vérifiable : l'utilisateur peut contrôler d'où vient chaque affirmation.
+En vert, ce qu'une recherche par similarité sait trouver. En violet, ce qu'elle ne peut pas produire — et c'est précisément ce qui rend la réponse vérifiable : l'utilisateur peut contrôler d'où vient chaque affirmation. Le graphe est dessiné par la démo elle-même, à partir des relations réellement remontées.
 
 ## Architecture du pipeline
 
@@ -150,9 +148,8 @@ src/
   reasoning/retrieval.py  retrieval hybride graphe + texte
   reasoning/generation.py construction du prompt et appel LLM
 scripts/                  pipelines d'import et de vectorisation
-  figure_apport_graphe.py figure du README : apport propre de l'ontologie
-app/                      démonstration FastAPI (API + page unique)
-docs/images/              captures et figures, régénérables
+app/                      démonstration FastAPI (API + page unique, graphe SVG)
+docs/images/              captures de la démo
 tests/                    calibration du seuil de pertinence (pytest)
 ```
 

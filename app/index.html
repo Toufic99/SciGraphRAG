@@ -129,6 +129,37 @@
             border-radius: 10px; font-size: .93rem; }
   .apport b { font-weight: 700; }
 
+  /* Le graphe, dessiné. C'est un projet de graphe de connaissances : montrer
+     des lignes de texte à la place revient à cacher l'objet même du projet. */
+  .graphe { background: var(--carte); border: 1px solid var(--trait);
+            border-radius: 13px; padding: 1.4rem 1.1rem 1rem;
+            margin-bottom: 1.4rem; box-shadow: var(--ombre); overflow-x: auto; }
+  .graphe svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+  .graphe-noeud { font-size: 12.5px; font-weight: 500; }
+  .graphe-arete { fill: none; stroke: var(--trait); stroke-width: 1.6; }
+  .graphe-type { font-family: var(--mono); font-size: 9px; fill: var(--encre-pale); }
+  .graphe-legende { display: flex; flex-wrap: wrap; gap: 1.2rem; justify-content: center;
+                    margin-top: 1rem; font-size: .8rem; color: var(--encre-doux); }
+  .graphe-legende span { display: inline-flex; align-items: center; gap: .45rem; }
+  .graphe-legende i { width: 13px; height: 13px; border-radius: 4px; display: inline-block; }
+
+  .liste-repliee summary { cursor: pointer; font-size: .84rem; color: var(--encre-pale);
+                           padding: .35rem 0; user-select: none; }
+  .liste-repliee summary:hover { color: var(--accent); }
+  .liste-repliee[open] summary { margin-bottom: .6rem; }
+
+  /* Le calcul prend une dizaine de secondes sur CPU : une ligne de texte figée
+     laisse croire que la page a planté. */
+  .attente { display: flex; align-items: center; gap: .7rem;
+             color: var(--encre-pale); font-size: .92rem; padding: 1.2rem 0; }
+  .attente::before {
+    content: ''; width: 15px; height: 15px; flex: none; border-radius: 50%;
+    border: 2px solid var(--trait); border-top-color: var(--accent);
+    animation: tourne .8s linear infinite;
+  }
+  @keyframes tourne { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .attente::before { animation: none; } }
+
   /* Les deux directions de lecture, séparées : un concept a ~2 parents et ~20
      enfants, les mélanger noie la généralisation. */
   h3.sens { font-size: .8rem; font-weight: 700; color: var(--encre-doux);
@@ -222,7 +253,8 @@ $('#f').addEventListener('submit', async e => {
   if (!texte) return;
 
   $('#btn').disabled = true;
-  $('#resultat').innerHTML = '<p class="vide">Recherche en cours…</p>';
+  $('#resultat').innerHTML =
+    '<div class="attente">Encodage de la question, puis traversée du graphe…</div>';
 
   try {
     const r = await fetch('/api/question', {
@@ -238,6 +270,101 @@ $('#f').addEventListener('submit', async e => {
     $('#btn').disabled = false;
   }
 });
+
+/* Dessine le voisinage ontologique en couches : le concept général en haut,
+   ses spécialisations en dessous — le sens de lecture d'un IS_A. Les concepts
+   absents des résumés retrouvés sont mis en évidence : c'est l'apport propre
+   du graphe, et il doit se voir sans avoir à lire. */
+function grapheSVG(rels, depuisPubs) {
+  const liens = rels.filter(r => r.sens !== 'composition');
+  if (!liens.length) return '';
+
+  const parents = new Map(), noeuds = new Set();
+  for (const r of liens) {
+    noeuds.add(r.source); noeuds.add(r.cible);
+    if (!parents.has(r.source)) parents.set(r.source, []);
+    parents.get(r.source).push(r.cible);
+  }
+  if (noeuds.size > 22) return '';   // au-delà, la liste groupée reste plus lisible
+
+  const cache = new Map();
+  const prof = n => {
+    if (cache.has(n)) return cache.get(n);
+    cache.set(n, 0);                                    // coupe les cycles
+    const p = parents.get(n) || [];
+    const v = p.length ? 1 + Math.max(...p.map(prof)) : 0;
+    cache.set(n, v);
+    return v;
+  };
+
+  const niveaux = new Map();
+  for (const n of noeuds) {
+    const k = prof(n);
+    if (!niveaux.has(k)) niveaux.set(k, []);
+    niveaux.get(k).push(n);
+  }
+
+  const CAR = 6.75, PAD = 15, H = 32, GAP = 16, VGAP = 82, MARGE = 14;
+  const larg = n => n.length * CAR + PAD * 2;
+  const profMax = Math.max(...niveaux.keys());
+
+  let utile = 0;
+  for (const ns of niveaux.values())
+    utile = Math.max(utile, ns.reduce((s, n) => s + larg(n), 0) + GAP * (ns.length - 1));
+
+  const pos = new Map();
+  for (const [k, ns] of niveaux) {
+    ns.sort();
+    const total = ns.reduce((s, n) => s + larg(n), 0) + GAP * (ns.length - 1);
+    let x = MARGE + (utile - total) / 2;
+    for (const n of ns) {
+      const w = larg(n);
+      pos.set(n, { x: x + w / 2, y: k * VGAP + H / 2 + MARGE, w });
+      x += w + GAP;
+    }
+  }
+
+  const L = utile + MARGE * 2, Ht = profMax * VGAP + H + MARGE * 2;
+  const etiqueter = liens.length <= 10;
+
+  let s = `<svg viewBox="0 0 ${L} ${Ht}" width="${L}" role="img"
+     aria-label="Graphe des concepts et de leurs relations ontologiques">
+    <defs><marker id="fleche" viewBox="0 0 8 8" refX="7" refY="4"
+      markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 z" fill="var(--trait)"/></marker></defs>`;
+
+  for (const r of liens) {
+    const a = pos.get(r.source), b = pos.get(r.cible);
+    if (!a || !b) continue;
+    const y1 = a.y - H / 2, y2 = b.y + H / 2, mid = (y1 + y2) / 2;
+    s += `<path class="graphe-arete" marker-end="url(#fleche)"
+            d="M${a.x} ${y1} C${a.x} ${mid} ${b.x} ${mid} ${b.x} ${y2}"/>`;
+    if (etiqueter) {
+      s += `<text class="graphe-type" x="${(a.x + b.x) / 2}" y="${mid}"
+              text-anchor="middle" dy="3">${echapper(r.type)}</text>`;
+    }
+  }
+
+  for (const [n, p] of pos) {
+    const neuf = !depuisPubs.has(n);
+    const fond = neuf ? 'var(--graphe-fond)' : 'var(--accent-fond)';
+    const bord = neuf ? 'var(--graphe-bord)' : 'var(--accent-bord)';
+    const encre = neuf ? 'var(--graphe)' : 'var(--accent)';
+    s += `<g><rect x="${p.x - p.w / 2}" y="${p.y - H / 2}" width="${p.w}" height="${H}"
+            rx="9" fill="${fond}" stroke="${bord}" stroke-width="1.2"/>
+          <text class="graphe-noeud" x="${p.x}" y="${p.y}" dy="4.5"
+            text-anchor="middle" fill="${encre}"
+            font-weight="${neuf ? 700 : 500}">${echapper(n)}</text></g>`;
+  }
+
+  return `<div class="graphe">${s}</svg>
+    <div class="graphe-legende">
+      <span><i style="background:var(--accent-fond);border:1px solid var(--accent-bord)"></i>
+        cité par un résumé retrouvé</span>
+      <span><i style="background:var(--graphe-fond);border:1px solid var(--graphe-bord)"></i>
+        apporté par la traversée de l'ontologie</span>
+    </div></div>`;
+}
 
 function afficher(d) {
   let h = '';
@@ -280,6 +407,9 @@ function afficher(d) {
             c'est ce qu'une recherche par similarité seule ne peut pas produire.
           </div>`;
   }
+
+  const svg = grapheSVG(rels, new Set(d.concepts.map(c => c.nom)));
+  h += svg;
 
   const chemin = r =>
     `<div class="chemin">
@@ -324,15 +454,22 @@ function afficher(d) {
     ['composition', 'Protéines impliquées'],
   ];
 
-  let ecrit = false;
+  let liste = '', ecrit = false;
   for (const [sens, titre] of groupes) {
     const bloc = rels.filter(r => r.sens === sens);
     if (!bloc.length) continue;
-    h += `<h3 class="sens">${titre} <small>(${bloc.length})</small></h3>`;
-    h += rendre(bloc);
+    liste += `<h3 class="sens">${titre} <small>(${bloc.length})</small></h3>`;
+    liste += rendre(bloc);
     ecrit = true;
   }
+
+  // Quand le graphe est dessiné, la liste dit deux fois la même chose : on la
+  // replie. Sans graphe (voisinage trop dense, ou protéines d'une voie), elle
+  // redevient la seule lecture possible et reste dépliée.
   if (!ecrit) h += '<p class="vide">Aucune relation trouvée.</p>';
+  else if (svg) h += `<details class="liste-repliee">
+      <summary>Voir les mêmes relations en liste</summary>${liste}</details>`;
+  else h += liste;
   h += '</section>';
 
   h += `<section${d.pertinent === false ? ' class="attenue"' : ''}>`;
