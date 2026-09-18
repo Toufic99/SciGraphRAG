@@ -22,6 +22,10 @@
     --accent: #0d7a5f; --accent-fond: #e7f4ef; --accent-bord: #bfe3d5;
     --graphe: #6446ad; --graphe-fond: #f1ecfb; --graphe-bord: #d9cdf2;
     --alerte: #8f5d0d; --alerte-fond: #fcf3e1; --alerte-bord: #ecd6a8;
+    /* Palette décorative des cartes de stats, sans charge sémantique ailleurs
+       (vert/violet restent réservés à « texte » / « graphe » dans les résultats). */
+    --bleu: #1d63c9; --bleu-fond: #e8f0fd; --bleu-bord: #bfd6f7;
+    --rose: #b23e78; --rose-fond: #fbebf2; --rose-bord: #eec3dc;
     --ombre: 0 1px 2px rgba(20,25,30,.05), 0 8px 24px -14px rgba(20,25,30,.18);
     --ombre-fine: 0 1px 2px rgba(20,25,30,.04);
     --titre: 'Clash Display', 'Satoshi', system-ui, sans-serif;
@@ -34,6 +38,8 @@
       --accent:#4fd1a5; --accent-fond:#102923; --accent-bord:#1d4a3c;
       --graphe:#b79ae8; --graphe-fond:#1d1830; --graphe-bord:#342a52;
       --alerte:#e0ab5c; --alerte-fond:#2a2113; --alerte-bord:#4a3a1c;
+      --bleu:#7bacf5; --bleu-fond:#132236; --bleu-bord:#264a75;
+      --rose:#e8a0c8; --rose-fond:#2c1826; --rose-bord:#4d2c42;
       --ombre: 0 1px 2px rgba(0,0,0,.4), 0 12px 32px -16px rgba(0,0,0,.7);
       --ombre-fine: 0 1px 2px rgba(0,0,0,.35);
     }
@@ -45,41 +51,66 @@
     line-height: 1.62; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
   }
   .wrap { max-width: 56rem; margin: 0 auto; }
-  header { padding: 4rem 0 2rem; margin-bottom: 2rem; position: relative; }
-  header::after {
-    content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
-    background: linear-gradient(90deg, var(--accent), var(--graphe) 55%, transparent);
-    opacity: .55;
-  }
-  h1 { font-family: var(--titre); font-weight: 700; font-size: clamp(2rem, 5.5vw, 3rem);
-       margin: 0 0 .7rem; letter-spacing: -.025em; line-height: 1.05; }
-  .sous { color: var(--encre-doux); margin: 0; max-width: 44rem; font-size: 1.02rem; }
 
-  /* En pied de page : le contenu du graphe est une précision, pas une accroche. */
-  #stats { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-bottom: .6rem;
-           font-family: var(--mono); font-size: .8rem; color: var(--encre-pale); }
-  #stats b { color: var(--encre-doux); font-weight: 600; }
+  /* Le hero porte la couleur du projet : dégradé très doux entre les deux
+     teintes qui structurent toute la démo (texte = vert, graphe = violet).
+     Décoratif seulement — le contraste du texte ne dépend jamais de lui. */
+  .hero { position: relative; margin: 2.2rem 0 1.6rem; padding: 2.6rem 2rem 2.2rem;
+          border-radius: 22px; border: 1px solid var(--trait); overflow: hidden;
+          box-shadow: var(--ombre); background: var(--carte); }
+  .hero-fond { position: absolute; inset: 0; z-index: 0; pointer-events: none;
+               background:
+                 radial-gradient(ellipse 60% 55% at 12% -8%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 70%),
+                 radial-gradient(ellipse 55% 60% at 100% 8%, color-mix(in srgb, var(--graphe) 22%, transparent), transparent 70%); }
+  .hero > * { position: relative; z-index: 1; }
+  .hero header { margin-bottom: .3rem; }
+
+  h1 { font-family: var(--titre); font-weight: 700; font-size: clamp(2rem, 5.5vw, 3rem);
+       margin: 0 0 .7rem; letter-spacing: -.025em; line-height: 1.05;
+       background: linear-gradient(100deg, var(--encre) 55%, var(--graphe));
+       -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sous { color: var(--encre-doux); margin: 0 0 1.7rem; max-width: 42rem; font-size: 1.02rem; }
+
+  /* Chiffres du graphe : une carte par mesure, couleur assignée par position
+     (nth-child), sans lien sémantique avec le vert/violet des résultats. */
+  .stats-row { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1.8rem 0 2.2rem; }
+  .stats-row span { display: flex; flex-direction: column; gap: .15rem;
+                    padding: .7rem 1.05rem; border-radius: 13px; border: 1px solid;
+                    min-width: 6.2rem; transition: transform .15s; }
+  .stats-row span:hover { transform: translateY(-2px); }
+  .stats-row b { font-family: var(--titre); font-size: 1.35rem; font-weight: 700; line-height: 1; }
+  .stats-row small { font-size: .74rem; color: var(--encre-doux); }
+  .stats-row span:nth-child(1) { background: var(--accent-fond); border-color: var(--accent-bord); }
+  .stats-row span:nth-child(1) b { color: var(--accent); }
+  .stats-row span:nth-child(2) { background: var(--bleu-fond); border-color: var(--bleu-bord); }
+  .stats-row span:nth-child(2) b { color: var(--bleu); }
+  .stats-row span:nth-child(3) { background: var(--graphe-fond); border-color: var(--graphe-bord); }
+  .stats-row span:nth-child(3) b { color: var(--graphe); }
+  .stats-row span:nth-child(4) { background: var(--alerte-fond); border-color: var(--alerte-bord); }
+  .stats-row span:nth-child(4) b { color: var(--alerte); }
+  .stats-row span:nth-child(5) { background: var(--rose-fond); border-color: var(--rose-bord); }
+  .stats-row span:nth-child(5) b { color: var(--rose); }
 
   form { display: flex; gap: .7rem; flex-wrap: wrap; margin-bottom: 1rem; }
   input[type=text] {
-    flex: 1 1 24rem; padding: .9rem 1.1rem; font-size: 1rem; font-family: inherit;
-    border: 1px solid var(--trait); border-radius: 11px; background: var(--carte);
-    color: var(--encre); box-shadow: var(--ombre-fine); transition: border-color .15s, box-shadow .15s;
+    flex: 1 1 24rem; padding: 1rem 1.25rem; font-size: 1rem; font-family: inherit;
+    border: 1px solid var(--trait); border-radius: 14px; background: var(--carte);
+    color: var(--encre); box-shadow: var(--ombre); transition: border-color .15s, box-shadow .15s;
   }
   input[type=text]:focus {
     outline: none; border-color: var(--accent);
-    box-shadow: 0 0 0 3px var(--accent-fond), var(--ombre-fine);
+    box-shadow: 0 0 0 3px var(--accent-fond), var(--ombre);
   }
   button {
-    padding: .9rem 1.6rem; font-size: .98rem; font-weight: 700; font-family: inherit;
-    border: none; border-radius: 11px; background: var(--accent); color: var(--fond);
-    cursor: pointer; letter-spacing: .01em; box-shadow: var(--ombre-fine);
-    transition: filter .15s, transform .1s;
+    padding: 1rem 1.7rem; font-size: .98rem; font-weight: 700; font-family: inherit;
+    border: none; border-radius: 14px; color: #fff; cursor: pointer; letter-spacing: .01em;
+    background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 55%, var(--graphe)));
+    box-shadow: var(--ombre); transition: filter .15s, transform .1s;
   }
   button:hover:not(:disabled) { filter: brightness(1.08); }
   button:active:not(:disabled) { transform: translateY(1px); }
   button:disabled { opacity: .45; cursor: wait; }
-  .exemples { font-size: .88rem; color: var(--encre-pale); margin-bottom: 2.6rem; }
+  .exemples { font-size: .88rem; color: var(--encre-pale); margin-bottom: 0; }
   .exemples a { color: var(--accent); cursor: pointer; margin-right: .5rem;
                 text-decoration: none; border-bottom: 1px solid var(--accent-bord);
                 padding-bottom: 1px; }
@@ -196,33 +227,38 @@
 <body>
 <div class="wrap">
 
-<header>
-  <h1>SciGraphRAG</h1>
-  <p class="sous">Questions-réponses biomédicales où rien n'est à croire sur parole :
-  chaque affirmation renvoie soit à un PMID, soit à une relation d'ontologie que vous pouvez
-  parcourir vous-même. La recherche vectorielle n'est que le point d'entrée — c'est la traversée
-  du graphe qui fait apparaître ce que les résumés ne disent pas.</p>
-</header>
+<section class="hero">
+  <div class="hero-fond" aria-hidden="true"></div>
 
-<form id="f">
-  <input type="text" id="q" placeholder="Ex. : DNA repair after alkylation damage" autocomplete="off">
-  <label style="display:flex;align-items:center;gap:.4rem;font-size:.88rem;color:var(--encre-doux)">
-    <input type="checkbox" id="gen"> rédiger la réponse
-  </label>
-  <button type="submit" id="btn">Interroger</button>
-</form>
+  <header>
+    <h1>SciGraphRAG</h1>
+    <p class="sous">Questions-réponses biomédicales où rien n'est à croire sur parole :
+    chaque affirmation renvoie soit à un PMID, soit à une relation d'ontologie que vous pouvez
+    parcourir vous-même. La recherche vectorielle n'est que le point d'entrée — c'est la traversée
+    du graphe qui fait apparaître ce que les résumés ne disent pas.</p>
+  </header>
 
-<p class="exemples">
-  Essayer :
-  <a onclick="poser('DNA repair after alkylation damage')">réparation de l'ADN</a>
-  <a onclick="poser('apoptosis regulation pathways')">apoptose</a>
-  <a onclick="poser('mitochondrial organization and biogenesis')">mitochondries</a>
-</p>
+  <form id="f">
+    <input type="text" id="q" placeholder="Ex. : DNA repair after alkylation damage" autocomplete="off">
+    <label style="display:flex;align-items:center;gap:.4rem;font-size:.88rem;color:var(--encre-doux)">
+      <input type="checkbox" id="gen"> rédiger la réponse
+    </label>
+    <button type="submit" id="btn">Interroger</button>
+  </form>
+
+  <p class="exemples">
+    Essayer :
+    <a onclick="poser('DNA repair after alkylation damage')">réparation de l'ADN</a>
+    <a onclick="poser('apoptosis regulation pathways')">apoptose</a>
+    <a onclick="poser('mitochondrial organization and biogenesis')">mitochondries</a>
+  </p>
+</section>
+
+<div id="stats" class="stats-row">chargement…</div>
 
 <div id="resultat"></div>
 
 <footer>
-  <div id="stats">chargement…</div>
   Gene Ontology + Reactome dans Neo4j, enrichis d'abstracts PubMed.
   Recherche vectorielle locale (multilingual-e5-large, index natif Neo4j) puis traversée du graphe.
   Le modèle est multilingue par choix : questions en français sur un corpus anglophone.
@@ -238,7 +274,7 @@ fetch('/api/stats').then(r => r.json()).then(s => {
     ['processus GO', s.processus], ['pathways', s.pathways],
     ['protéines', s.proteines], ['publications', s.publications],
     ['liens MENTIONS', s.mentions],
-  ].map(([l, v]) => `<span><b>${v ?? '—'}</b> ${l}</span>`).join('');
+  ].map(([l, v]) => `<span><b>${v ?? '—'}</b><small>${l}</small></span>`).join('');
 }).catch(() => $('#stats').textContent = 'graphe injoignable — Neo4j est-il démarré ?');
 
 function poser(texte) { $('#q').value = texte; $('#f').requestSubmit(); }
