@@ -421,22 +421,29 @@ function afficher(d) {
     h += `<section><p class="note">${echapper(d.erreur_generation)}</p></section>`;
   }
 
-  h += '<section><h2>Concepts du graphe</h2>';
-  h += d.concepts.length
+  // Concepts, chemins et publications forment un seul bloc de confiance : si
+  // le corpus ne couvre pas la question, aucun des trois ne mérite sa mise en
+  // valeur habituelle — surtout pas le message qui vante l'apport du graphe,
+  // qui serait alors en train d'applaudir une traversée faite sur du bruit.
+  let corps = '';
+
+  corps += '<section><h2>Concepts du graphe</h2>';
+  corps += d.concepts.length
     ? d.concepts.map(c =>
         `<span class="puce">${echapper(c.nom)} <small>${c.publications} pub.</small></span>`).join('')
     : '<p class="vide">Aucun concept rattaché.</p>';
-  h += '</section>';
+  corps += '</section>';
 
-  h += '<section><h2>Chemins ontologiques — ce qui rend la réponse vérifiable</h2>';
+  corps += '<section><h2>Chemins ontologiques — ce qui rend la réponse vérifiable</h2>';
 
   const rels = d.relations || [];
   const apport = d.apport_graphe;
 
   // Le chiffre qui résume le projet : sans lui, les chemins ci-dessous ne sont
-  // qu'une liste de jargon dont on ne voit pas l'intérêt.
-  if (apport && apport.concepts_du_graphe > 0) {
-    h += `<div class="apport">
+  // qu'une liste de jargon dont on ne voit pas l'intérêt. Mais uniquement si la
+  // question est couverte — sinon ce chiffre décrit du bruit, pas un apport.
+  if (apport && apport.concepts_du_graphe > 0 && d.pertinent !== false) {
+    corps += `<div class="apport">
             <b>${apport.concepts_du_graphe} des ${apport.concepts_total} concepts ci-dessous
             ne figurent dans aucun résumé retrouvé.</b>
             Ils viennent de la structure curatée de Gene Ontology, pas du texte —
@@ -445,7 +452,7 @@ function afficher(d) {
   }
 
   const svg = grapheSVG(rels, new Set(d.concepts.map(c => c.nom)));
-  h += svg;
+  corps += svg;
 
   const chemin = r =>
     `<div class="chemin">
@@ -502,15 +509,15 @@ function afficher(d) {
   // Quand le graphe est dessiné, la liste dit deux fois la même chose : on la
   // replie. Sans graphe (voisinage trop dense, ou protéines d'une voie), elle
   // redevient la seule lecture possible et reste dépliée.
-  if (!ecrit) h += '<p class="vide">Aucune relation trouvée.</p>';
-  else if (svg) h += `<details class="liste-repliee">
+  if (!ecrit) corps += '<p class="vide">Aucune relation trouvée.</p>';
+  else if (svg) corps += `<details class="liste-repliee">
       <summary>Voir les mêmes relations en liste</summary>${liste}</details>`;
-  else h += liste;
-  h += '</section>';
+  else corps += liste;
+  corps += '</section>';
 
-  h += `<section${d.pertinent === false ? ' class="attenue"' : ''}>`;
-  h += `<h2>Publications (${d.publications.length})</h2>`;
-  h += d.publications.length
+  corps += '<section>';
+  corps += `<h2>Publications (${d.publications.length})</h2>`;
+  corps += d.publications.length
     ? d.publications.map(p => `
         <div class="pub">
           <div class="pub-tete">
@@ -524,7 +531,12 @@ function afficher(d) {
           <div class="pub-extrait">${echapper(p.extrait)}…</div>
         </div>`).join('')
     : '<p class="vide">Aucune publication.</p>';
-  h += '</section>';
+  corps += '</section>';
+
+  // Un seul point de bascule : toute la matière (concepts, chemins, publications)
+  // s'atténue d'un bloc quand la couverture est douteuse — jamais section par
+  // section, sinon une partie reste crédible alors que rien ne l'est vraiment.
+  h += d.pertinent === false ? `<div class="attenue">${corps}</div>` : corps;
 
   $('#resultat').innerHTML = h;
 }
